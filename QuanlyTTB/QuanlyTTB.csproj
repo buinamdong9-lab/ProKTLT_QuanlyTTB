@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\UcDanhSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\UcDanhSach.Designer.cs">
+      <DependentUpon>UcDanhSach.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\UcSapXep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\UcSapXep.Designer.cs">
+      <DependentUpon>UcSapXep.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\UcThemMoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\UcThemMoi.Designer.cs">
+      <DependentUpon>UcThemMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\UcThongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\UcThongKe.Designer.cs">
+      <DependentUpon>UcThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\UcTimKiem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\UcTimKiem.Designer.cs">
+      <DependentUpon>UcTimKiem.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\UcDanhSach.resx">
+      <DependentUpon>UcDanhSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\UcSapXep.resx">
+      <DependentUpon>UcSapXep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\UcThemMoi.resx">
+      <DependentUpon>UcThemMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\UcThongKe.resx">
+      <DependentUpon>UcThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\UcTimKiem.resx">
+      <DependentUpon>UcTimKiem.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Backup\" />
+  </ItemGroup>
+
+</Project>
