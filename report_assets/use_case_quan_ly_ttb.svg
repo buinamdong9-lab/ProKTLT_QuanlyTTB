@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1250" viewBox="0 0 1800 1250">
+<defs>
+<style>.title{font:42px Arial;fill:#17365D}.head{font:bold 25px Arial;fill:#17365D}.body{font:22px Arial;fill:#111}.small{font:18px Arial;fill:#64748B}.rel{stroke:#64748B;stroke-width:3;fill:none}</style>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748B"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="900" y="75" class="title" text-anchor="middle">SƠ ĐỒ USE CASE HỆ THỐNG QUẢN LÝ TRANG THIẾT BỊ</text>
+<rect x="360" y="125" width="1375" height="1060" rx="24" fill="white" stroke="#2E74B5" stroke-width="4"/>
+<text x="1047" y="175" class="head" text-anchor="middle">HỆ THỐNG QUẢN LÝ TRANG THIẾT BỊ</text>
+<circle cx="170" cy="270" r="40" fill="white" stroke="#17365D" stroke-width="4"/>
+<path d="M170 310 V455 M90 355 H250 M170 455 L105 545 M170 455 L235 545" fill="none" stroke="#17365D" stroke-width="4"/>
+<text x="170" y="590" class="head" text-anchor="middle">Người quản lý</text>
+<ellipse cx="637.5" cy="272.5" rx="182.5" ry="52.5" fill="#EAF4EE" stroke="#2E74B5" stroke-width="3"/><text x="637.5" y="257.5" class="body" text-anchor="middle">M1 - Cập nhật hồ sơ</text><text x="637.5" y="287.5" class="body" text-anchor="middle">thêm / sửa thiết bị</text>
+<ellipse cx="637.5" cy="432.5" rx="182.5" ry="52.5" fill="#E8EEF5" stroke="#2E74B5" stroke-width="3"/><text x="637.5" y="417.5" class="body" text-anchor="middle">M2 - Xem danh sách</text><text x="637.5" y="447.5" class="body" text-anchor="middle">phân trang và thao tác</text>
+<ellipse cx="637.5" cy="592.5" rx="182.5" ry="52.5" fill="#E8EEF5" stroke="#2E74B5" stroke-width="3"/><text x="637.5" y="577.5" class="body" text-anchor="middle">M3 - Sắp xếp</text><text x="637.5" y="607.5" class="body" text-anchor="middle">5 thuật toán, nhiều khóa</text>
+<ellipse cx="637.5" cy="752.5" rx="182.5" ry="52.5" fill="#EAF4EE" stroke="#2E74B5" stroke-width="3"/><text x="637.5" y="737.5" class="body" text-anchor="middle">M4 - Tìm kiếm</text><text x="637.5" y="767.5" class="body" text-anchor="middle">tuần tự / nhị phân</text>
+<ellipse cx="637.5" cy="912.5" rx="182.5" ry="52.5" fill="#F2F1FF" stroke="#2E74B5" stroke-width="3"/><text x="637.5" y="912.5" class="body" text-anchor="middle">M5 - Xem thống kê</text>
+<ellipse cx="637.5" cy="1072.5" rx="182.5" ry="52.5" fill="#E8EEF5" stroke="#2E74B5" stroke-width="3"/><text x="637.5" y="1072.5" class="body" text-anchor="middle">M6 - Thoát chương trình</text>
+<ellipse cx="1170.0" cy="272.5" rx="160.0" ry="52.5" fill="#FFF6DF" stroke="#2E74B5" stroke-width="3"/><text x="1170.0" y="272.5" class="body" text-anchor="middle">Xóa thiết bị</text>
+<ellipse cx="1540.0" cy="272.5" rx="150.0" ry="52.5" fill="#FFF6DF" stroke="#2E74B5" stroke-width="3"/><text x="1540.0" y="272.5" class="body" text-anchor="middle">Xuất dữ liệu CSV</text>
+<ellipse cx="1170.0" cy="482.5" rx="160.0" ry="52.5" fill="#E8EEF5" stroke="#2E74B5" stroke-width="3"/><text x="1170.0" y="467.5" class="body" text-anchor="middle">Sao lưu dữ liệu</text><text x="1170.0" y="497.5" class="body" text-anchor="middle">ra tệp ZIP</text>
+<ellipse cx="1540.0" cy="482.5" rx="150.0" ry="52.5" fill="#EAF4EE" stroke="#2E74B5" stroke-width="3"/><text x="1540.0" y="467.5" class="body" text-anchor="middle">Khôi phục dữ liệu</text><text x="1540.0" y="497.5" class="body" text-anchor="middle">từ tệp ZIP</text>
+<ellipse cx="1170.0" cy="752.5" rx="160.0" ry="52.5" fill="#F2F1FF" stroke="#2E74B5" stroke-width="3"/><text x="1170.0" y="737.5" class="body" text-anchor="middle">Kiểm tra dữ liệu</text><text x="1170.0" y="767.5" class="body" text-anchor="middle">hợp lệ và không trùng</text>
+<ellipse cx="1540.0" cy="752.5" rx="150.0" ry="52.5" fill="#FFF6DF" stroke="#2E74B5" stroke-width="3"/><text x="1540.0" y="737.5" class="body" text-anchor="middle">Đọc / ghi data.json</text><text x="1540.0" y="767.5" class="body" text-anchor="middle">qua tệp tạm</text>
+</svg>

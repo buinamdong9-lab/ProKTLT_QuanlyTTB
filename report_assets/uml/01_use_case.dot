@@ -1,0 +1,54 @@
+
+digraph G {
+
+graph [bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.65",
+       fontname="Arial", labelloc="t", fontsize="25", fontcolor="#17365D"];
+node [fontname="Arial", fontsize="12", color="#2E74B5", penwidth="1.8"];
+edge [fontname="Arial", fontsize="10", color="#64748B", penwidth="1.5",
+      arrowsize="0.8"];
+
+label="USE CASE - HỆ THỐNG QUẢN LÝ TRANG THIẾT BỊ";
+rankdir=LR;
+actor [shape=plaintext, label=<
+  <TABLE BORDER="0" CELLBORDER="0">
+    <TR><TD><FONT POINT-SIZE="32">◯</FONT></TD></TR>
+    <TR><TD><FONT POINT-SIZE="28">╱│╲</FONT></TD></TR>
+    <TR><TD><FONT POINT-SIZE="28">╱ ╲</FONT></TD></TR>
+    <TR><TD><B>Người quản lý</B></TD></TR>
+  </TABLE>
+>];
+subgraph cluster_system {
+  label="HỆ THỐNG QUẢN LÝ TRANG THIẾT BỊ";
+  color="#2E74B5"; penwidth=2; style="rounded";
+  node [shape=ellipse, style="filled", width=2.65, height=0.72];
+  m1 [label="M1 - Thêm / sửa\nhồ sơ thiết bị", fillcolor="#EAF4EE"];
+  m2 [label="M2 - Xem danh sách\nvà phân trang", fillcolor="#E8EEF5"];
+  m3 [label="M3 - Sắp xếp\n5 thuật toán", fillcolor="#E8EEF5"];
+  m4 [label="M4 - Tìm kiếm\ntuần tự / nhị phân", fillcolor="#EAF4EE"];
+  m5 [label="M5 - Thống kê", fillcolor="#F2F1FF"];
+  m6 [label="M6 - Thoát", fillcolor="#E8EEF5"];
+  del [label="Xóa thiết bị", fillcolor="#FFF6DF"];
+  csv [label="Xuất CSV", fillcolor="#FFF6DF"];
+  backup [label="Sao lưu JSON", fillcolor="#E8EEF5"];
+  restore [label="Khôi phục JSON", fillcolor="#EAF4EE"];
+  validate [label="Kiểm tra dữ liệu\nvà chống trùng", fillcolor="#F2F1FF"];
+  save [label="Đọc / ghi data.json\nqua tệp tạm", fillcolor="#FFF6DF"];
+
+  {rank=same; m1; del; validate}
+  {rank=same; m2; csv; backup; restore}
+  {rank=same; m3; m4; m5; m6}
+  m1 -> validate [style=dashed, label="<<include>>"];
+  validate -> save [style=dashed, label="<<include>>"];
+  restore -> validate [style=dashed, label="<<include>>"];
+}
+actor -> m1 [arrowhead=none];
+actor -> m2 [arrowhead=none];
+actor -> m3 [arrowhead=none];
+actor -> m4 [arrowhead=none];
+actor -> m5 [arrowhead=none];
+actor -> m6 [arrowhead=none];
+actor -> del [arrowhead=none];
+actor -> csv [arrowhead=none];
+actor -> backup [arrowhead=none];
+actor -> restore [arrowhead=none];
+}

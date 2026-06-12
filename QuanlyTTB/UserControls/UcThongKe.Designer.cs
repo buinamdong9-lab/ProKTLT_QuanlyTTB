@@ -49,20 +49,20 @@ partial class UcThongKe
         btnTaiLai = new Button();
         tableStats = new TableLayoutPanel();
         groupCap = new GroupBox();
-        gridCap = new System.Windows.Forms.DataGridView();
-        capBindingSource = new System.Windows.Forms.BindingSource(components);
-        colCapNhom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colCapSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+        gridCap = new DataGridView();
+        colCapNhom = new DataGridViewTextBoxColumn();
+        colCapSoLuong = new DataGridViewTextBoxColumn();
+        capBindingSource = new BindingSource(components);
         groupChungLoai = new GroupBox();
-        gridChungLoai = new System.Windows.Forms.DataGridView();
-        chungLoaiBindingSource = new System.Windows.Forms.BindingSource(components);
-        colChungLoaiNhom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colChungLoaiSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+        gridChungLoai = new DataGridView();
+        colChungLoaiNhom = new DataGridViewTextBoxColumn();
+        colChungLoaiSoLuong = new DataGridViewTextBoxColumn();
+        chungLoaiBindingSource = new BindingSource(components);
         groupNguonCap = new GroupBox();
-        gridNguonCap = new System.Windows.Forms.DataGridView();
-        nguonCapBindingSource = new System.Windows.Forms.BindingSource(components);
-        colNguonCapNhom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colNguonCapSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+        gridNguonCap = new DataGridView();
+        colNguonCapNhom = new DataGridViewTextBoxColumn();
+        colNguonCapSoLuong = new DataGridViewTextBoxColumn();
+        nguonCapBindingSource = new BindingSource(components);
         panelSummary.SuspendLayout();
         tableStats.SuspendLayout();
         groupCap.SuspendLayout();
@@ -82,9 +82,10 @@ partial class UcThongKe
         lblTitle.Dock = DockStyle.Top;
         lblTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
         lblTitle.ForeColor = Color.FromArgb(27, 94, 60);
+        lblTitle.Location = new Point(0, 0);
         lblTitle.Name = "lblTitle";
-        lblTitle.Padding = new Padding(25, 18, 0, 0);
-        lblTitle.Size = new Size(950, 66);
+        lblTitle.Padding = new Padding(29, 24, 0, 0);
+        lblTitle.Size = new Size(1086, 88);
         lblTitle.TabIndex = 0;
         lblTitle.Text = "M5 - THỐNG KÊ TRANG THIẾT BỊ";
         // 
@@ -97,16 +98,17 @@ partial class UcThongKe
         panelSummary.Controls.Add(lblTongSoLuongValue);
         panelSummary.Controls.Add(btnTaiLai);
         panelSummary.Dock = DockStyle.Top;
-        panelSummary.Location = new Point(0, 66);
+        panelSummary.Location = new Point(0, 88);
+        panelSummary.Margin = new Padding(3, 4, 3, 4);
         panelSummary.Name = "panelSummary";
-        panelSummary.Size = new Size(950, 115);
+        panelSummary.Size = new Size(1086, 153);
         panelSummary.TabIndex = 1;
         // 
         // lblTongLoaiCaption
         // 
-        lblTongLoaiCaption.Location = new Point(40, 24);
+        lblTongLoaiCaption.Location = new Point(46, 32);
         lblTongLoaiCaption.Name = "lblTongLoaiCaption";
-        lblTongLoaiCaption.Size = new Size(150, 24);
+        lblTongLoaiCaption.Size = new Size(171, 32);
         lblTongLoaiCaption.TabIndex = 0;
         lblTongLoaiCaption.Text = "Tổng số loại thiết bị";
         // 
@@ -114,17 +116,17 @@ partial class UcThongKe
         // 
         lblTongLoaiValue.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
         lblTongLoaiValue.ForeColor = Color.FromArgb(27, 94, 60);
-        lblTongLoaiValue.Location = new Point(40, 48);
+        lblTongLoaiValue.Location = new Point(46, 64);
         lblTongLoaiValue.Name = "lblTongLoaiValue";
-        lblTongLoaiValue.Size = new Size(150, 48);
+        lblTongLoaiValue.Size = new Size(171, 64);
         lblTongLoaiValue.TabIndex = 1;
         lblTongLoaiValue.Text = "0";
         // 
         // lblTongSoLuongCaption
         // 
-        lblTongSoLuongCaption.Location = new Point(260, 24);
+        lblTongSoLuongCaption.Location = new Point(297, 32);
         lblTongSoLuongCaption.Name = "lblTongSoLuongCaption";
-        lblTongSoLuongCaption.Size = new Size(170, 24);
+        lblTongSoLuongCaption.Size = new Size(194, 32);
         lblTongSoLuongCaption.TabIndex = 2;
         lblTongSoLuongCaption.Text = "Tổng số lượng thiết bị";
         // 
@@ -132,9 +134,9 @@ partial class UcThongKe
         // 
         lblTongSoLuongValue.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
         lblTongSoLuongValue.ForeColor = Color.FromArgb(27, 94, 60);
-        lblTongSoLuongValue.Location = new Point(260, 48);
+        lblTongSoLuongValue.Location = new Point(297, 64);
         lblTongSoLuongValue.Name = "lblTongSoLuongValue";
-        lblTongSoLuongValue.Size = new Size(170, 48);
+        lblTongSoLuongValue.Size = new Size(194, 64);
         lblTongSoLuongValue.TabIndex = 3;
         lblTongSoLuongValue.Text = "0";
         // 
@@ -144,9 +146,10 @@ partial class UcThongKe
         btnTaiLai.BackColor = Color.FromArgb(27, 94, 60);
         btnTaiLai.FlatStyle = FlatStyle.Flat;
         btnTaiLai.ForeColor = Color.White;
-        btnTaiLai.Location = new Point(800, 38);
+        btnTaiLai.Location = new Point(914, 51);
+        btnTaiLai.Margin = new Padding(3, 4, 3, 4);
         btnTaiLai.Name = "btnTaiLai";
-        btnTaiLai.Size = new Size(110, 38);
+        btnTaiLai.Size = new Size(126, 51);
         btnTaiLai.TabIndex = 4;
         btnTaiLai.Text = "Tải lại";
         btnTaiLai.UseVisualStyleBackColor = false;
@@ -163,12 +166,13 @@ partial class UcThongKe
         tableStats.Controls.Add(groupChungLoai, 1, 0);
         tableStats.Controls.Add(groupNguonCap, 2, 0);
         tableStats.Dock = DockStyle.Fill;
-        tableStats.Location = new Point(0, 181);
+        tableStats.Location = new Point(0, 241);
+        tableStats.Margin = new Padding(3, 4, 3, 4);
         tableStats.Name = "tableStats";
-        tableStats.Padding = new Padding(20);
+        tableStats.Padding = new Padding(23, 27, 23, 27);
         tableStats.RowCount = 1;
         tableStats.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-        tableStats.Size = new Size(950, 499);
+        tableStats.Size = new Size(1086, 666);
         tableStats.TabIndex = 2;
         // 
         // groupCap
@@ -176,11 +180,11 @@ partial class UcThongKe
         groupCap.Controls.Add(gridCap);
         groupCap.Dock = DockStyle.Fill;
         groupCap.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-        groupCap.Location = new Point(28, 28);
-        groupCap.Margin = new Padding(8);
+        groupCap.Location = new Point(32, 38);
+        groupCap.Margin = new Padding(9, 11, 9, 11);
         groupCap.Name = "groupCap";
-        groupCap.Padding = new Padding(3);
-        groupCap.Size = new Size(287, 443);
+        groupCap.Padding = new Padding(3, 4, 3, 4);
+        groupCap.Size = new Size(328, 590);
         groupCap.TabIndex = 0;
         groupCap.TabStop = false;
         groupCap.Text = "Số lượng theo cấp";
@@ -192,49 +196,58 @@ partial class UcThongKe
         gridCap.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         gridCap.BackgroundColor = Color.White;
         gridCap.BorderStyle = BorderStyle.None;
-        gridCap.ColumnHeadersHeight = 36;
         dataGridViewCellStyle1.BackColor = Color.FromArgb(196, 232, 211);
         dataGridViewCellStyle1.ForeColor = Color.FromArgb(27, 94, 60);
         gridCap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+        gridCap.ColumnHeadersHeight = 36;
         gridCap.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-        gridCap.ColumnHeadersVisible = true;
-        gridCap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colCapNhom, colCapSoLuong });
+        gridCap.Columns.AddRange(new DataGridViewColumn[] { colCapNhom, colCapSoLuong });
         gridCap.DataSource = capBindingSource;
         gridCap.Dock = DockStyle.Fill;
         gridCap.EnableHeadersVisualStyles = false;
         gridCap.Font = new Font("Segoe UI", 9F);
-        gridCap.Location = new Point(3, 21);
+        gridCap.Location = new Point(3, 27);
+        gridCap.Margin = new Padding(3, 4, 3, 4);
         gridCap.Name = "gridCap";
         gridCap.ReadOnly = true;
         gridCap.RowHeadersVisible = false;
+        gridCap.RowHeadersWidth = 51;
         gridCap.RowTemplate.Height = 30;
-        gridCap.Size = new Size(281, 419);
+        gridCap.Size = new Size(322, 559);
         gridCap.TabIndex = 0;
+        // 
+        // colCapNhom
+        // 
         colCapNhom.DataPropertyName = "Nhom";
         colCapNhom.FillWeight = 70F;
         colCapNhom.HeaderText = "Nhóm";
+        colCapNhom.MinimumWidth = 6;
         colCapNhom.Name = "colCapNhom";
         colCapNhom.ReadOnly = true;
+        // 
+        // colCapSoLuong
+        // 
         colCapSoLuong.DataPropertyName = "SoLuong";
         colCapSoLuong.FillWeight = 30F;
         colCapSoLuong.HeaderText = "Số lượng";
+        colCapSoLuong.MinimumWidth = 6;
         colCapSoLuong.Name = "colCapSoLuong";
         colCapSoLuong.ReadOnly = true;
         // 
         // capBindingSource
         // 
-        capBindingSource.DataSource = typeof(UcThongKe.ThongKeDong);
+        capBindingSource.DataSource = typeof(ThongKeDong);
         // 
         // groupChungLoai
         // 
         groupChungLoai.Controls.Add(gridChungLoai);
         groupChungLoai.Dock = DockStyle.Fill;
         groupChungLoai.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-        groupChungLoai.Location = new Point(331, 28);
-        groupChungLoai.Margin = new Padding(8);
+        groupChungLoai.Location = new Point(378, 38);
+        groupChungLoai.Margin = new Padding(9, 11, 9, 11);
         groupChungLoai.Name = "groupChungLoai";
-        groupChungLoai.Padding = new Padding(3);
-        groupChungLoai.Size = new Size(287, 443);
+        groupChungLoai.Padding = new Padding(3, 4, 3, 4);
+        groupChungLoai.Size = new Size(328, 590);
         groupChungLoai.TabIndex = 1;
         groupChungLoai.TabStop = false;
         groupChungLoai.Text = "Số lượng theo chủng loại";
@@ -246,49 +259,58 @@ partial class UcThongKe
         gridChungLoai.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         gridChungLoai.BackgroundColor = Color.White;
         gridChungLoai.BorderStyle = BorderStyle.None;
-        gridChungLoai.ColumnHeadersHeight = 36;
         dataGridViewCellStyle2.BackColor = Color.FromArgb(196, 232, 211);
         dataGridViewCellStyle2.ForeColor = Color.FromArgb(27, 94, 60);
         gridChungLoai.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+        gridChungLoai.ColumnHeadersHeight = 36;
         gridChungLoai.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-        gridChungLoai.ColumnHeadersVisible = true;
-        gridChungLoai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colChungLoaiNhom, colChungLoaiSoLuong });
+        gridChungLoai.Columns.AddRange(new DataGridViewColumn[] { colChungLoaiNhom, colChungLoaiSoLuong });
         gridChungLoai.DataSource = chungLoaiBindingSource;
         gridChungLoai.Dock = DockStyle.Fill;
         gridChungLoai.EnableHeadersVisualStyles = false;
         gridChungLoai.Font = new Font("Segoe UI", 9F);
-        gridChungLoai.Location = new Point(3, 21);
+        gridChungLoai.Location = new Point(3, 27);
+        gridChungLoai.Margin = new Padding(3, 4, 3, 4);
         gridChungLoai.Name = "gridChungLoai";
         gridChungLoai.ReadOnly = true;
         gridChungLoai.RowHeadersVisible = false;
+        gridChungLoai.RowHeadersWidth = 51;
         gridChungLoai.RowTemplate.Height = 30;
-        gridChungLoai.Size = new Size(281, 419);
+        gridChungLoai.Size = new Size(322, 559);
         gridChungLoai.TabIndex = 0;
+        // 
+        // colChungLoaiNhom
+        // 
         colChungLoaiNhom.DataPropertyName = "Nhom";
         colChungLoaiNhom.FillWeight = 70F;
         colChungLoaiNhom.HeaderText = "Nhóm";
+        colChungLoaiNhom.MinimumWidth = 6;
         colChungLoaiNhom.Name = "colChungLoaiNhom";
         colChungLoaiNhom.ReadOnly = true;
+        // 
+        // colChungLoaiSoLuong
+        // 
         colChungLoaiSoLuong.DataPropertyName = "SoLuong";
         colChungLoaiSoLuong.FillWeight = 30F;
         colChungLoaiSoLuong.HeaderText = "Số lượng";
+        colChungLoaiSoLuong.MinimumWidth = 6;
         colChungLoaiSoLuong.Name = "colChungLoaiSoLuong";
         colChungLoaiSoLuong.ReadOnly = true;
         // 
         // chungLoaiBindingSource
         // 
-        chungLoaiBindingSource.DataSource = typeof(UcThongKe.ThongKeDong);
+        chungLoaiBindingSource.DataSource = typeof(ThongKeDong);
         // 
         // groupNguonCap
         // 
         groupNguonCap.Controls.Add(gridNguonCap);
         groupNguonCap.Dock = DockStyle.Fill;
         groupNguonCap.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-        groupNguonCap.Location = new Point(634, 28);
-        groupNguonCap.Margin = new Padding(8);
+        groupNguonCap.Location = new Point(724, 38);
+        groupNguonCap.Margin = new Padding(9, 11, 9, 11);
         groupNguonCap.Name = "groupNguonCap";
-        groupNguonCap.Padding = new Padding(3);
-        groupNguonCap.Size = new Size(288, 443);
+        groupNguonCap.Padding = new Padding(3, 4, 3, 4);
+        groupNguonCap.Size = new Size(330, 590);
         groupNguonCap.TabIndex = 2;
         groupNguonCap.TabStop = false;
         groupNguonCap.Text = "Số lượng theo nguồn cấp";
@@ -300,49 +322,59 @@ partial class UcThongKe
         gridNguonCap.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         gridNguonCap.BackgroundColor = Color.White;
         gridNguonCap.BorderStyle = BorderStyle.None;
-        gridNguonCap.ColumnHeadersHeight = 36;
         dataGridViewCellStyle3.BackColor = Color.FromArgb(196, 232, 211);
         dataGridViewCellStyle3.ForeColor = Color.FromArgb(27, 94, 60);
         gridNguonCap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+        gridNguonCap.ColumnHeadersHeight = 36;
         gridNguonCap.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-        gridNguonCap.ColumnHeadersVisible = true;
-        gridNguonCap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colNguonCapNhom, colNguonCapSoLuong });
+        gridNguonCap.Columns.AddRange(new DataGridViewColumn[] { colNguonCapNhom, colNguonCapSoLuong });
         gridNguonCap.DataSource = nguonCapBindingSource;
         gridNguonCap.Dock = DockStyle.Fill;
         gridNguonCap.EnableHeadersVisualStyles = false;
         gridNguonCap.Font = new Font("Segoe UI", 9F);
-        gridNguonCap.Location = new Point(3, 21);
+        gridNguonCap.Location = new Point(3, 27);
+        gridNguonCap.Margin = new Padding(3, 4, 3, 4);
         gridNguonCap.Name = "gridNguonCap";
         gridNguonCap.ReadOnly = true;
         gridNguonCap.RowHeadersVisible = false;
+        gridNguonCap.RowHeadersWidth = 51;
         gridNguonCap.RowTemplate.Height = 30;
-        gridNguonCap.Size = new Size(282, 419);
+        gridNguonCap.Size = new Size(324, 559);
         gridNguonCap.TabIndex = 0;
+        // 
+        // colNguonCapNhom
+        // 
         colNguonCapNhom.DataPropertyName = "Nhom";
         colNguonCapNhom.FillWeight = 70F;
         colNguonCapNhom.HeaderText = "Nhóm";
+        colNguonCapNhom.MinimumWidth = 6;
         colNguonCapNhom.Name = "colNguonCapNhom";
         colNguonCapNhom.ReadOnly = true;
+        // 
+        // colNguonCapSoLuong
+        // 
         colNguonCapSoLuong.DataPropertyName = "SoLuong";
         colNguonCapSoLuong.FillWeight = 30F;
         colNguonCapSoLuong.HeaderText = "Số lượng";
+        colNguonCapSoLuong.MinimumWidth = 6;
         colNguonCapSoLuong.Name = "colNguonCapSoLuong";
         colNguonCapSoLuong.ReadOnly = true;
         // 
         // nguonCapBindingSource
         // 
-        nguonCapBindingSource.DataSource = typeof(UcThongKe.ThongKeDong);
+        nguonCapBindingSource.DataSource = typeof(ThongKeDong);
         // 
         // UcThongKe
         // 
-        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleDimensions = new SizeF(8F, 20F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.White;
         Controls.Add(tableStats);
         Controls.Add(panelSummary);
         Controls.Add(lblTitle);
+        Margin = new Padding(3, 4, 3, 4);
         Name = "UcThongKe";
-        Size = new Size(950, 680);
+        Size = new Size(1086, 907);
         panelSummary.ResumeLayout(false);
         tableStats.ResumeLayout(false);
         groupCap.ResumeLayout(false);

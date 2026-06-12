@@ -47,6 +47,8 @@ partial class UcSapXep
         DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
         lblTitle = new Label();
         panelOptions = new Panel();
+        rdoGiamDan = new RadioButton();
+        rdoTangDan = new RadioButton();
         lblThuatToan = new Label();
         cboThuatToan = new ComboBox();
         lblKhoa = new Label();
@@ -93,6 +95,8 @@ partial class UcSapXep
         // panelOptions
         // 
         panelOptions.BackColor = Color.White;
+        panelOptions.Controls.Add(rdoGiamDan);
+        panelOptions.Controls.Add(rdoTangDan);
         panelOptions.Controls.Add(lblThuatToan);
         panelOptions.Controls.Add(cboThuatToan);
         panelOptions.Controls.Add(lblKhoa);
@@ -105,6 +109,29 @@ partial class UcSapXep
         panelOptions.Name = "panelOptions";
         panelOptions.Size = new Size(1086, 149);
         panelOptions.TabIndex = 1;
+        // 
+        // rdoGiamDan
+        // 
+        rdoGiamDan.AutoSize = true;
+        rdoGiamDan.Location = new Point(429, 71);
+        rdoGiamDan.Name = "rdoGiamDan";
+        rdoGiamDan.Size = new Size(94, 24);
+        rdoGiamDan.TabIndex = 7;
+        rdoGiamDan.TabStop = true;
+        rdoGiamDan.Text = "Giảm dần";
+        rdoGiamDan.UseVisualStyleBackColor = true;
+        // 
+        // rdoTangDan
+        // 
+        rdoTangDan.AutoSize = true;
+        rdoTangDan.Checked = true;
+        rdoTangDan.Location = new Point(138, 71);
+        rdoTangDan.Name = "rdoTangDan";
+        rdoTangDan.Size = new Size(91, 24);
+        rdoTangDan.TabIndex = 6;
+        rdoTangDan.TabStop = true;
+        rdoTangDan.Text = "Tăng dần";
+        rdoTangDan.UseVisualStyleBackColor = true;
         // 
         // lblThuatToan
         // 
@@ -119,10 +146,10 @@ partial class UcSapXep
         cboThuatToan.DropDownStyle = ComboBoxStyle.DropDownList;
         cboThuatToan.FormattingEnabled = true;
         cboThuatToan.Items.AddRange(new object[] { "Selection Sort", "Insertion Sort", "Bubble Sort", "Quick Sort", "Merge Sort" });
-        cboThuatToan.Location = new Point(131, 20);
+        cboThuatToan.Location = new Point(138, 20);
         cboThuatToan.Margin = new Padding(3, 4, 3, 4);
         cboThuatToan.Name = "cboThuatToan";
-        cboThuatToan.Size = new Size(205, 28);
+        cboThuatToan.Size = new Size(198, 28);
         cboThuatToan.TabIndex = 1;
         // 
         // lblKhoa
@@ -162,7 +189,7 @@ partial class UcSapXep
         // 
         lblStatus.AutoSize = true;
         lblStatus.ForeColor = Color.FromArgb(27, 94, 60);
-        lblStatus.Location = new Point(29, 96);
+        lblStatus.Location = new Point(20, 116);
         lblStatus.Name = "lblStatus";
         lblStatus.Size = new Size(228, 20);
         lblStatus.TabIndex = 5;
@@ -196,9 +223,9 @@ partial class UcSapXep
         // lblTrang
         // 
         lblTrang.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-        lblTrang.Location = new Point(740, 21);
+        lblTrang.Location = new Point(720, 21);
         lblTrang.Name = "lblTrang";
-        lblTrang.Size = new Size(96, 33);
+        lblTrang.Size = new Size(127, 33);
         lblTrang.TabIndex = 3;
         lblTrang.Text = "Trang 1 / 1";
         lblTrang.TextAlign = ContentAlignment.MiddleCenter;
@@ -404,4 +431,7 @@ partial class UcSapXep
         ((System.ComponentModel.ISupportInitialize)thietBiBindingSource).EndInit();
         ResumeLayout(false);
     }
+
+    private RadioButton rdoGiamDan;
+    private RadioButton rdoTangDan;
 }

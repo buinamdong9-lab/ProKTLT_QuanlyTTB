@@ -1,0 +1,947 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/7y1kre1w",
+    "id": "7y1kre1w",
+    "slide": 16,
+    "layoutId": "/ppt/slideLayouts/slideLayout1.xml",
+    "layoutName": "DEFAULT",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "backgroundColor": "#F4F7FA",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 960,
+      "height": 540
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#4472C4",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#5B9BD5",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Calibri Light"
+      },
+      "minorFont": {
+        "latinTypeface": "Calibri"
+      }
+    },
+    "typefaces": [
+      "Calibri",
+      "Calibri Light",
+      "Cambria"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout1.xml",
+      "name": "DEFAULT",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yd0z6103",
+      "id": "2",
+      "name": "Text 0",
+      "bbox": [
+        48,
+        24,
+        864,
+        52.8
+      ],
+      "geometry": "rect",
+      "text": "VALIDATION DÙNG CHUNG KHI ĐỌC VÀ KHÔI PHỤC",
+      "textPreview": "VALIDATION DÙNG CHUNG KHI ĐỌC VÀ KHÔI PHỤC",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "VALIDATION DÙNG CHUNG KHI ĐỌC VÀ KHÔI PHỤC"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "VALIDATION DÙNG CHUNG KHI ĐỌC VÀ KHÔI PHỤC",
+          "marginLeft": 0,
+          "indent": 0,
+          "runs": [
+            {
+              "index": 1,
+              "text": "VALIDATION DÙNG CHUNG KHI ĐỌC VÀ KHÔI PHỤC",
+              "fontSize": 32,
+              "typeface": "Cambria",
+              "color": "#1E2761",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": ""
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rytsvu9k",
+      "id": "3",
+      "name": "Shape 1",
+      "bbox": [
+        48,
+        81.6,
+        864,
+        3.84
+      ],
+      "geometry": "rect",
+      "fillColor": "#028090",
+      "lineColor": "#028090",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g7adsji5",
+      "id": "4",
+      "bbox": [
+        65,
+        130,
+        190,
+        62
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E8EAF2",
+      "lineColor": "#1E2761",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9s36hcrm",
+      "id": "5",
+      "bbox": [
+        69,
+        133,
+        182,
+        56
+      ],
+      "geometry": "rect",
+      "text": "Khởi động\nThuDocDuLieu()",
+      "textPreview": "Khởi động | ThuDocDuLieu()",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 5,
+          "right": 8,
+          "bottom": 5,
+          "left": 8
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Khởi động"
+          },
+          {
+            "index": 2,
+            "text": "ThuDocDuLieu()"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Khởi động",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Calibri",
+            "color": "#1E2761",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Khởi động",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#1E2761",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "ThuDocDuLieu()",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Calibri",
+            "color": "#1E2761",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ThuDocDuLieu()",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#1E2761",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(255, 255, 255, 0)",
+      "lineColor": "rgba(255, 255, 255, 0)",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y1kre1w7",
+      "id": "6",
+      "bbox": [
+        65,
+        330,
+        190,
+        62
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF2DF",
+      "lineColor": "#D97706",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rmhk3q5o",
+      "id": "7",
+      "bbox": [
+        69,
+        333,
+        182,
+        56
+      ],
+      "geometry": "rect",
+      "text": "Khôi phục\nfile backup JSON",
+      "textPreview": "Khôi phục | file backup JSON",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 5,
+          "right": 8,
+          "bottom": 5,
+          "left": 8
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Khôi phục"
+          },
+          {
+            "index": 2,
+            "text": "file backup JSON"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Khôi phục",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Calibri",
+            "color": "#1E2761",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Khôi phục",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#1E2761",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "file backup JSON",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Calibri",
+            "color": "#1E2761",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "file backup JSON",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#1E2761",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(255, 255, 255, 0)",
+      "lineColor": "rgba(255, 255, 255, 0)",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g3ex0nux",
+      "id": "8",
+      "bbox": [
+        340,
+        215,
+        280,
+        92
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F0EAFE",
+      "lineColor": "#8B5CF6",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5o7qpg3e",
+      "id": "9",
+      "bbox": [
+        344,
+        218,
+        272,
+        86
+      ],
+      "geometry": "rect",
+      "text": "MainForm.KiemTraDuLieuDanhSach()\nIReadOnlyList<ThietBi?>",
+      "textPreview": "MainForm.KiemTraDuLieuDanhSach() | IReadOnlyList<ThietBi?>",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 5,
+          "right": 8,
+          "bottom": 5,
+          "left": 8
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "MainForm.KiemTraDuLieuDanhSach()"
+          },
+          {
+            "index": 2,
+            "text": "IReadOnlyList<ThietBi?>"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "MainForm.KiemTraDuLieuDanhSach()",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Calibri",
+            "color": "#1E2761",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "MainForm.KiemTraDuLieuDanhSach()",
+              "fontSize": 16,
+              "typeface": "Calibri",
+              "color": "#1E2761",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "IReadOnlyList<ThietBi?>",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Calibri",
+            "color": "#1E2761",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "IReadOnlyList<ThietBi?>",
+              "fontSize": 16,
+              "typeface": "Calibri",
+              "color": "#1E2761",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(255, 255, 255, 0)",
+      "lineColor": "rgba(255, 255, 255, 0)",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5gbq1ory",
+      "id": "10",
+      "bbox": [
+        685,
+        145,
+        225,
+        185
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E3F3F4",
+      "lineColor": "#028090",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cvixczed",
+      "id": "11",
+      "bbox": [
+        689,
+        148,
+        217,
+        179
+      ],
+      "geometry": "rect",
+      "text": "• Bản ghi null / trường rỗng\n• Mã TTBxxx và không trùng\n• Số hiệu không trùng\n• Số lượng > 0, cấp 1–5\n• Ngày hợp lệ và không vượt hiện tại",
+      "textPreview": "• Bản ghi null / trường rỗng | • Mã TTBxxx và không trùng | • Số hiệu không trùng | • Số lượng > 0, cấp 1–5 | • Ngày hợp lệ và không vượt...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 5,
+          "right": 8,
+          "bottom": 5,
+          "left": 8
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• Bản ghi null / trường rỗng"
+          },
+          {
+            "index": 2,
+            "text": "• Mã TTBxxx và không trùng"
+          },
+          {
+            "index": 3,
+            "text": "• Số hiệu không trùng"
+          },
+          {
+            "index": 4,
+            "text": "• Số lượng > 0, cấp 1–5"
+          },
+          {
+            "index": 5,
+            "text": "• Ngày hợp lệ và không vượt hiện tại"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• Bản ghi null / trường rỗng",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Calibri",
+            "color": "#1E2761",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Bản ghi null / trường rỗng",
+              "fontSize": 13,
+              "typeface": "Calibri",
+              "color": "#1E2761",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Mã TTBxxx và không trùng",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Calibri",
+            "color": "#1E2761",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Mã TTBxxx và không trùng",
+              "fontSize": 13,
+              "typeface": "Calibri",
+              "color": "#1E2761",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• Số hiệu không trùng",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Calibri",
+            "color": "#1E2761",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Số hiệu không trùng",
+              "fontSize": 13,
+              "typeface": "Calibri",
+              "color": "#1E2761",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• Số lượng > 0, cấp 1–5",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Calibri",
+            "color": "#1E2761",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Số lượng > 0, cấp 1–5",
+              "fontSize": 13,
+              "typeface": "Calibri",
+              "color": "#1E2761",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "• Ngày hợp lệ và không vượt hiện tại",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Calibri",
+            "color": "#1E2761",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Ngày hợp lệ và không vượt hiện tại",
+              "fontSize": 13,
+              "typeface": "Calibri",
+              "color": "#1E2761",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(255, 255, 255, 0)",
+      "lineColor": "rgba(255, 255, 255, 0)",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nap4r65w",
+      "id": "12",
+      "bbox": [
+        685,
+        365,
+        225,
+        78
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF1F1",
+      "lineColor": "#F05D5E",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/upwb2hwf",
+      "id": "13",
+      "bbox": [
+        689,
+        368,
+        217,
+        72
+      ],
+      "geometry": "rect",
+      "text": "Dữ liệu lỗi\n→ từ chối nạp\n→ khóa chức năng lưu",
+      "textPreview": "Dữ liệu lỗi | → từ chối nạp | → khóa chức năng lưu",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 5,
+          "right": 8,
+          "bottom": 5,
+          "left": 8
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Dữ liệu lỗi"
+          },
+          {
+            "index": 2,
+            "text": "→ từ chối nạp"
+          },
+          {
+            "index": 3,
+            "text": "→ khóa chức năng lưu"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Dữ liệu lỗi",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Calibri",
+            "color": "#B83232",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Dữ liệu lỗi",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#B83232",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "→ từ chối nạp",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Calibri",
+            "color": "#B83232",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "→ từ chối nạp",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#B83232",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "→ khóa chức năng lưu",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Calibri",
+            "color": "#B83232",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "→ khóa chức năng lưu",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#B83232",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(255, 255, 255, 0)",
+      "lineColor": "rgba(255, 255, 255, 0)",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/54zidony",
+      "id": "14",
+      "bbox": [
+        255,
+        161,
+        85,
+        100
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#718096",
+      "lineWidth": 1.8
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cj6tovah",
+      "id": "15",
+      "bbox": [
+        255,
+        261,
+        85,
+        100
+      ],
+      "verticalFlip": true,
+      "geometry": "straightConnector1",
+      "lineColor": "#718096",
+      "lineWidth": 1.8
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nyd0z610",
+      "id": "16",
+      "bbox": [
+        620,
+        237.5,
+        65,
+        23.5
+      ],
+      "verticalFlip": true,
+      "geometry": "straightConnector1",
+      "lineColor": "#028090",
+      "lineWidth": 1.8
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/udg7adsj",
+      "id": "17",
+      "bbox": [
+        797.5,
+        330,
+        0,
+        35
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#F05D5E",
+      "lineWidth": 1.8
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1032lszq",
+      "id": "18",
+      "bbox": [
+        48,
+        492,
+        864,
+        28
+      ],
+      "geometry": "rect",
+      "text": "Danh sách khởi động có thể rỗng; backup khôi phục phải chứa ít nhất một bản ghi.",
+      "textPreview": "Danh sách khởi động có thể rỗng; backup khôi phục phải chứa ít nhất một bản ghi.",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 5,
+          "right": 8,
+          "bottom": 5,
+          "left": 8
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Danh sách khởi động có thể rỗng; backup khôi phục phải chứa ít nhất một bản ghi."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Danh sách khởi động có thể rỗng; backup khôi phục phải chứa ít nhất một bản ghi.",
+          "resolvedTextStyle": {
+            "fontSize": 11.51,
+            "typeface": "Calibri",
+            "color": "#4A5568",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Danh sách khởi động có thể rỗng; backup khôi phục phải chứa ít nhất một bản ghi.",
+              "fontSize": 11.51,
+              "typeface": "Calibri",
+              "color": "#4A5568"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(255, 255, 255, 0)",
+      "lineColor": "rgba(255, 255, 255, 0)",
+      "lineWidth": 1.2
+    }
+  ],
+  "composeRuns": []
+}

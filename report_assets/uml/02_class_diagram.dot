@@ -1,0 +1,82 @@
+
+digraph G {
+
+graph [bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.65",
+       fontname="Arial", labelloc="t", fontsize="25", fontcolor="#17365D"];
+node [fontname="Arial", fontsize="12", color="#2E74B5", penwidth="1.8"];
+edge [fontname="Arial", fontsize="10", color="#64748B", penwidth="1.5",
+      arrowsize="0.8"];
+
+label="CLASS DIAGRAM - CÁC LỚP CHÍNH";
+rankdir=TB;
+node [shape=plain];
+
+ThietBi [label=<
+<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#2E74B5">
+<TR><TD BGCOLOR="#EAF4EE"><B>ThietBi</B></TD></TR>
+<TR><TD ALIGN="LEFT">+ MaTTB: string<BR/>+ SoHieu: string<BR/>+ TenTTB: string<BR/>
++ NgaySanXuat: DateTime<BR/>+ NgayDuaVaoSuDung: DateTime<BR/>
++ NguonCap: string<BR/>+ SoLuong: int<BR/>+ ChungLoai: string<BR/>+ Cap: int</TD></TR>
+</TABLE>>];
+
+MainForm [label=<
+<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#2E74B5">
+<TR><TD BGCOLOR="#E8EEF5"><B>MainForm : Form</B></TD></TR>
+<TR><TD ALIGN="LEFT">+ DanhSach: List&lt;ThietBi&gt;<BR/>+ KhoaDaSapXep: string?<BR/>
++ KetQuaTimKiemM4: List&lt;ThietBi&gt;?</TD></TR>
+<TR><TD ALIGN="LEFT">+ LuuDuLieu(): bool<BR/>+ NapLaiDuLieu()<BR/>
++ LuuKetQuaTimKiem(...)<BR/>+ LoadUserControl(...)<BR/>+ MoThemMoi(...)</TD></TR>
+</TABLE>>];
+
+Them [label=<
+<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#2E74B5">
+<TR><TD BGCOLOR="#EAF4EE"><B>UcThemMoi : UserControl</B></TD></TR>
+<TR><TD ALIGN="LEFT">- mainForm: MainForm?<BR/>- thietBiDangSua: ThietBi?</TD></TR>
+<TR><TD ALIGN="LEFT">- KiemTraDuLieu(): bool<BR/>- SaoChep(...): ThietBi<BR/>
+- GanDuLieu(...)<BR/>- NapDuLieu(...)</TD></TR>
+</TABLE>>];
+
+DanhSach [label=<
+<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#2E74B5">
+<TR><TD BGCOLOR="#FFF6DF"><B>UcDanhSach : UserControl</B></TD></TR>
+<TR><TD ALIGN="LEFT">- duLieuPhanTrang: List&lt;ThietBi&gt;<BR/>- trangHienTai: int</TD></TR>
+<TR><TD ALIGN="LEFT">- SaoLuuDuLieu(): string<BR/>- KhoiPhucDuLieu(...)<BR/>
+- KiemTraDuLieuKhoiPhuc(...)<BR/>- XuatDanhSachCsv(...)</TD></TR>
+</TABLE>>];
+
+SapXep [label=<
+<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#2E74B5">
+<TR><TD BGCOLOR="#E8EEF5"><B>UcSapXep : UserControl</B></TD></TR>
+<TR><TD ALIGN="LEFT">- SapXep&lt;T&gt;(...)<BR/>- TaoHamSoSanh(...)</TD></TR>
+<TR><TD ALIGN="LEFT">- SelectionSort&lt;T&gt;(...)<BR/>- InsertionSort&lt;T&gt;(...)<BR/>
+- BubbleSort&lt;T&gt;(...)<BR/>- QuickSort&lt;T&gt;(...)<BR/>- MergeSort&lt;T&gt;(...)</TD></TR>
+</TABLE>>];
+
+TimKiem [label=<
+<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#2E74B5">
+<TR><TD BGCOLOR="#EAF4EE"><B>UcTimKiem : UserControl</B></TD></TR>
+<TR><TD ALIGN="LEFT">- ketQuaTimKiem: List&lt;ThietBi&gt;<BR/>- HauToTimKiem</TD></TR>
+<TR><TD ALIGN="LEFT">- TimTuanTu(...)<BR/>- TimNhiPhan(...)<BR/>
+- TimNhiPhanMotPhan(...)<BR/>- TaoChiMucHauTo(...)<BR/>- ChuanHoa(...)</TD></TR>
+</TABLE>>];
+
+ThongKe [label=<
+<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#2E74B5">
+<TR><TD BGCOLOR="#F2F1FF"><B>UcThongKe : UserControl</B></TD></TR>
+<TR><TD ALIGN="LEFT">+ ThongKeDong<BR/>- mainForm: MainForm?</TD></TR>
+<TR><TD ALIGN="LEFT">- TongSoLoai(...)<BR/>- TongSoLuong(...)<BR/>
+- GomNhom(...)<BR/>- ChuyenThanhBang(...)</TD></TR>
+</TABLE>>];
+
+MainForm -> ThietBi [label="quản lý 0..*", arrowhead=diamond];
+MainForm -> Them [label="tạo / điều hướng", arrowhead=vee];
+MainForm -> DanhSach [label="tạo / điều hướng", arrowhead=vee];
+MainForm -> SapXep [label="tạo / điều hướng", arrowhead=vee];
+MainForm -> TimKiem [label="tạo / điều hướng", arrowhead=vee];
+MainForm -> ThongKe [label="tạo / điều hướng", arrowhead=vee];
+Them -> ThietBi [label="thêm / sửa", arrowhead=vee];
+DanhSach -> ThietBi [label="hiển thị / xóa", arrowhead=vee];
+SapXep -> ThietBi [label="so sánh", arrowhead=vee];
+TimKiem -> ThietBi [label="tìm", arrowhead=vee];
+ThongKe -> ThietBi [label="tổng hợp", arrowhead=vee];
+}

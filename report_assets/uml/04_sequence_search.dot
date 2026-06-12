@@ -1,0 +1,36 @@
+
+digraph G {
+
+graph [bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.65",
+       fontname="Arial", labelloc="t", fontsize="25", fontcolor="#17365D"];
+node [fontname="Arial", fontsize="12", color="#2E74B5", penwidth="1.8"];
+edge [fontname="Arial", fontsize="10", color="#64748B", penwidth="1.5",
+      arrowsize="0.8"];
+
+label="SEQUENCE DIAGRAM - TÌM KIẾM THIẾT BỊ";
+rankdir=TB;
+node [shape=box, style="rounded,filled", fillcolor="#E8EEF5",
+      width=2.2, height=0.55];
+edge [arrowhead=vee];
+u [label="Người dùng", fillcolor="#EAF4EE"];
+ui [label="UcTimKiem"];
+main [label="MainForm"];
+list [label="List<ThietBi>", fillcolor="#FFF6DF"];
+grid [label="DataGridView", fillcolor="#F2F1FF"];
+{rank=same; u; ui; main; list; grid}
+
+u -> ui [label="1. Chọn thuật toán, khóa,\nnhập từ khóa và bấm Tìm"];
+ui -> ui [label="2. Kiểm tra từ khóa"];
+ui -> main [label="3. Đọc KhoaDaSapXep"];
+main -> ui [label="4. Trả trạng thái sắp xếp"];
+ui -> list [label="5a. TimTuanTu(): duyệt tất cả\nhoặc\n5b. TimNhiPhan(): chia đôi"];
+list -> ui [label="6. List<ThietBi> kết quả"];
+ui -> main [label="7. LuuKetQuaTimKiem(...)"];
+main -> ui [label="8. Đã lưu trạng thái M4"];
+ui -> grid [label="9. Phân trang và gán DataSource"];
+grid -> u [label="10. Hiển thị số lượng và kết quả"];
+
+note [shape=note, label="Với khóa chuỗi:\n- ChuanHoa bỏ dấu, hạ chữ thường\n- Tìm tuần tự dùng Contains\n- Tìm nhị phân một phần dùng chỉ mục hậu tố",
+      fillcolor="#FFF6DF"];
+note -> ui [style=dashed, arrowhead=none];
+}

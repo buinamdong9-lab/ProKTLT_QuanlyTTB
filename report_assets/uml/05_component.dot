@@ -1,0 +1,34 @@
+
+digraph G {
+
+graph [bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.65",
+       fontname="Arial", labelloc="t", fontsize="25", fontcolor="#17365D"];
+node [fontname="Arial", fontsize="12", color="#2E74B5", penwidth="1.8"];
+edge [fontname="Arial", fontsize="10", color="#64748B", penwidth="1.5",
+      arrowsize="0.8"];
+
+label="COMPONENT DIAGRAM - KIẾN TRÚC ỨNG DỤNG";
+rankdir=TB;
+node [shape=component, style="filled", width=3.0, height=0.8];
+
+user [shape=plaintext, label="Người quản lý"];
+main [label="MainForm\nĐiều hướng và trạng thái chung", fillcolor="#E8EEF5"];
+controls [label="UserControls\nM1 · M2 · M3 · M4 · M5", fillcolor="#EAF4EE"];
+model [label="Models\nThietBi", fillcolor="#F2F1FF"];
+algorithms [label="Thuật toán\n5 sort · tuần tự · nhị phân · hậu tố", fillcolor="#E8EEF5"];
+storage [label="Lưu trữ tệp\nSystem.Text.Json · File I/O", fillcolor="#FFF6DF"];
+json [shape=folder, label="Data/data.json", fillcolor="#FFF6DF"];
+backup [shape=folder, label="Data/Backup/*.json", fillcolor="#EAF4EE"];
+csv [shape=note, label="DanhSachTrangThietBi_*.csv", fillcolor="#F2F1FF"];
+
+user -> main [label="thao tác"];
+main -> controls [label="LoadUserControl"];
+main -> model [label="giữ List<ThietBi>"];
+controls -> model [label="đọc / thay đổi"];
+controls -> algorithms [label="gọi"];
+main -> storage [label="đọc / ghi"];
+controls -> storage [label="CSV / backup / restore"];
+storage -> json [label="JSON"];
+storage -> backup [label="sao lưu / khôi phục"];
+storage -> csv [label="xuất"];
+}

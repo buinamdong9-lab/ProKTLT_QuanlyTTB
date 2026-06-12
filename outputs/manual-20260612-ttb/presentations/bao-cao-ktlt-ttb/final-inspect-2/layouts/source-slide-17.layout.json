@@ -1,0 +1,1059 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/54zidony",
+    "id": "54zidony",
+    "slide": 18,
+    "layoutId": "/ppt/slideLayouts/slideLayout1.xml",
+    "layoutName": "DEFAULT",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "backgroundColor": "#F4F7FA",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 960,
+      "height": 540
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#4472C4",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#5B9BD5",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Calibri Light"
+      },
+      "minorFont": {
+        "latinTypeface": "Calibri"
+      }
+    },
+    "typefaces": [
+      "Calibri",
+      "Calibri Light",
+      "Cambria"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout1.xml",
+      "name": "DEFAULT",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x0nuxc3y",
+      "id": "2",
+      "name": "Text 0",
+      "bbox": [
+        48,
+        24,
+        864,
+        52.8
+      ],
+      "geometry": "rect",
+      "text": "HẠN CHẾ & HƯỚNG PHÁT TRIỂN",
+      "textPreview": "HẠN CHẾ & HƯỚNG PHÁT TRIỂN",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "HẠN CHẾ & HƯỚNG PHÁT TRIỂN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "HẠN CHẾ & HƯỚNG PHÁT TRIỂN",
+          "marginLeft": 0,
+          "indent": 0,
+          "runs": [
+            {
+              "index": 1,
+              "text": "HẠN CHẾ & HƯỚNG PHÁT TRIỂN",
+              "fontSize": 37.33,
+              "typeface": "Cambria",
+              "color": "#1E2761",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": ""
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4fu18jqh",
+      "id": "3",
+      "name": "Shape 1",
+      "bbox": [
+        48,
+        81.6,
+        864,
+        3.84
+      ],
+      "geometry": "rect",
+      "fillColor": "#028090",
+      "lineColor": "#028090",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fil0rqd4",
+      "id": "4",
+      "name": "Shape 2",
+      "bbox": [
+        38.4,
+        100.8,
+        427.2,
+        398.4
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#E2E8F0",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qxs72x4n",
+      "id": "5",
+      "name": "Text 3",
+      "bbox": [
+        52.8,
+        109.44,
+        393.6,
+        36.48
+      ],
+      "geometry": "rect",
+      "text": "Hạn chế",
+      "textPreview": "Hạn chế",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Hạn chế"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Hạn chế",
+          "marginLeft": 0,
+          "indent": 0,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Hạn chế",
+              "fontSize": 18.67,
+              "typeface": "Calibri",
+              "color": "#F96167",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": ""
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xobm58z2",
+      "id": "6",
+      "name": "Text 4",
+      "bbox": [
+        52.8,
+        151.68,
+        398.4,
+        326.4
+      ],
+      "geometry": "rect",
+      "text": "Chỉ phục vụ một người dùng, chưa có phân quyền\nDữ liệu JSON chưa phù hợp môi trường nhiều người\nĐường dẫn file còn phụ thuộc vị trí máy chạy\nThứ tự M3 chỉ giữ trong phiên (file lưu theo mã TTB)\nChỉ mục hậu tố tạo lại mỗi lần – tốn bộ nhớ khi lớn\nThuật toán O(n²) chậm khi số hồ sơ rất lớn\nThống kê chỉ dạng bảng, chưa có biểu đồ\nChưa có bộ unit test tự động",
+      "textPreview": "Chỉ phục vụ một người dùng, chưa có phân quyền | Dữ liệu JSON chưa phù hợp môi trường nhiều người | Đường dẫn file còn phụ thuộc vị trí m...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 8,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• Chỉ phục vụ một người dùng, chưa có phân quyền"
+          },
+          {
+            "index": 2,
+            "text": "• Dữ liệu JSON chưa phù hợp môi trường nhiều người"
+          },
+          {
+            "index": 3,
+            "text": "• Đường dẫn file còn phụ thuộc vị trí máy chạy"
+          },
+          {
+            "index": 4,
+            "text": "• Thứ tự M3 chỉ giữ trong phiên (file lưu theo mã TTB)"
+          },
+          {
+            "index": 5,
+            "text": "• Chỉ mục hậu tố tạo lại mỗi lần – tốn bộ nhớ khi lớn"
+          },
+          {
+            "index": 6,
+            "text": "• Thuật toán O(n²) chậm khi số hồ sơ rất lớn"
+          },
+          {
+            "index": 7,
+            "text": "• Thống kê chỉ dạng bảng, chưa có biểu đồ"
+          },
+          {
+            "index": 8,
+            "text": "• Chưa có bộ unit test tự động"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Chỉ phục vụ một người dùng, chưa có phân quyền",
+          "bulletCharacter": "•",
+          "marginLeft": 342900,
+          "indent": -342900,
+          "spaceAfter": 400,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Chỉ phục vụ một người dùng, chưa có phân quyền",
+              "fontSize": 14.67,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Dữ liệu JSON chưa phù hợp môi trường nhiều người",
+          "bulletCharacter": "•",
+          "marginLeft": 342900,
+          "indent": -342900,
+          "spaceAfter": 400,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Dữ liệu JSON chưa phù hợp môi trường nhiều người",
+              "fontSize": 14.67,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Đường dẫn file còn phụ thuộc vị trí máy chạy",
+          "bulletCharacter": "•",
+          "marginLeft": 342900,
+          "indent": -342900,
+          "spaceAfter": 400,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Đường dẫn file còn phụ thuộc vị trí máy chạy",
+              "fontSize": 14.67,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "text": "Thứ tự M3 chỉ giữ trong phiên (file lưu theo mã TTB)",
+          "bulletCharacter": "•",
+          "marginLeft": 342900,
+          "indent": -342900,
+          "spaceAfter": 400,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Thứ tự M3 chỉ giữ trong phiên (file lưu theo mã TTB)",
+              "fontSize": 14.67,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "text": "Chỉ mục hậu tố tạo lại mỗi lần – tốn bộ nhớ khi lớn",
+          "bulletCharacter": "•",
+          "marginLeft": 342900,
+          "indent": -342900,
+          "spaceAfter": 400,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Chỉ mục hậu tố tạo lại mỗi lần – tốn bộ nhớ khi lớn",
+              "fontSize": 14.67,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "text": "Thuật toán O(n²) chậm khi số hồ sơ rất lớn",
+          "bulletCharacter": "•",
+          "marginLeft": 342900,
+          "indent": -342900,
+          "spaceAfter": 400,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Thuật toán O(n²) chậm khi số hồ sơ rất lớn",
+              "fontSize": 14.67,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "text": "Thống kê chỉ dạng bảng, chưa có biểu đồ",
+          "bulletCharacter": "•",
+          "marginLeft": 342900,
+          "indent": -342900,
+          "spaceAfter": 400,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Thống kê chỉ dạng bảng, chưa có biểu đồ",
+              "fontSize": 14.67,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "text": "Chưa có bộ unit test tự động",
+          "bulletCharacter": "•",
+          "marginLeft": 342900,
+          "indent": -342900,
+          "spaceAfter": 400,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Chưa có bộ unit test tự động",
+              "fontSize": 14.67,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/83itgfml",
+      "id": "7",
+      "name": "Shape 5",
+      "bbox": [
+        489.6,
+        100.8,
+        432,
+        398.4
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#E2E8F0",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fepkzupw",
+      "id": "8",
+      "name": "Text 6",
+      "bbox": [
+        504,
+        109.44,
+        403.2,
+        36.48
+      ],
+      "geometry": "rect",
+      "text": "Hướng phát triển",
+      "textPreview": "Hướng phát triển",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Hướng phát triển"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Hướng phát triển",
+          "marginLeft": 0,
+          "indent": 0,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Hướng phát triển",
+              "fontSize": 18.67,
+              "typeface": "Calibri",
+              "color": "#028090",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": ""
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mtwra5gb",
+      "id": "9",
+      "name": "Shape 7",
+      "bbox": [
+        504,
+        153.6,
+        100.8,
+        28.8
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#02C39A",
+      "lineColor": "#02C39A",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oj2t83it",
+      "id": "10",
+      "name": "Text 8",
+      "bbox": [
+        504,
+        153.6,
+        100.8,
+        28.8
+      ],
+      "geometry": "rect",
+      "text": "Ngắn hạn",
+      "textPreview": "Ngắn hạn",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Ngắn hạn"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Ngắn hạn",
+          "marginLeft": 0,
+          "indent": 0,
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Ngắn hạn",
+              "fontSize": 12,
+              "typeface": "Calibri",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": ""
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d4vmtwra",
+      "id": "11",
+      "name": "Text 9",
+      "bbox": [
+        504,
+        185.28,
+        403.2,
+        72
+      ],
+      "geometry": "rect",
+      "text": "Đường dẫn dữ liệu tương đối thay cho đường dẫn cố định\nGhi khôi phục qua file tạm để tăng tính nguyên tử\nSự kiện cập nhật trạng thái M4",
+      "textPreview": "Đường dẫn dữ liệu tương đối thay cho đường dẫn cố định | Ghi khôi phục qua file tạm để tăng tính nguyên tử | Sự kiện cập nhật trạng thái M4",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Đường dẫn dữ liệu tương đối thay cho đường dẫn cố định"
+          },
+          {
+            "index": 2,
+            "text": "Ghi khôi phục qua file tạm để tăng tính nguyên tử"
+          },
+          {
+            "index": 3,
+            "text": "Sự kiện cập nhật trạng thái M4"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Đường dẫn dữ liệu tương đối thay cho đường dẫn cố định",
+          "marginLeft": 0,
+          "indent": 0,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Đường dẫn dữ liệu tương đối thay cho đường dẫn cố định",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ],
+          "bulletCharacter": ""
+        },
+        {
+          "index": 2,
+          "text": "Ghi khôi phục qua file tạm để tăng tính nguyên tử",
+          "marginLeft": 0,
+          "indent": 0,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Ghi khôi phục qua file tạm để tăng tính nguyên tử",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ],
+          "bulletCharacter": ""
+        },
+        {
+          "index": 3,
+          "text": "Sự kiện cập nhật trạng thái M4",
+          "marginLeft": 0,
+          "indent": 0,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Sự kiện cập nhật trạng thái M4",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ],
+          "bulletCharacter": ""
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6dcbulwv",
+      "id": "12",
+      "name": "Shape 10",
+      "bbox": [
+        504,
+        264,
+        100.8,
+        28.8
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#028090",
+      "lineColor": "#028090",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vy90je9c",
+      "id": "13",
+      "name": "Text 11",
+      "bbox": [
+        504,
+        264,
+        100.8,
+        28.8
+      ],
+      "geometry": "rect",
+      "text": "Trung hạn",
+      "textPreview": "Trung hạn",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Trung hạn"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Trung hạn",
+          "marginLeft": 0,
+          "indent": 0,
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Trung hạn",
+              "fontSize": 12,
+              "typeface": "Calibri",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": ""
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o7qpg3ex",
+      "id": "14",
+      "name": "Text 12",
+      "bbox": [
+        504,
+        295.68,
+        403.2,
+        72
+      ],
+      "geometry": "rect",
+      "text": "Tách tầng lưu trữ / nghiệp vụ / UI\nUnit test: sắp xếp, tìm kiếm, validation\nBiểu đồ thống kê trực quan",
+      "textPreview": "Tách tầng lưu trữ / nghiệp vụ / UI | Unit test: sắp xếp, tìm kiếm, validation | Biểu đồ thống kê trực quan",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Tách tầng lưu trữ / nghiệp vụ / UI"
+          },
+          {
+            "index": 2,
+            "text": "Unit test: sắp xếp, tìm kiếm, validation"
+          },
+          {
+            "index": 3,
+            "text": "Biểu đồ thống kê trực quan"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Tách tầng lưu trữ / nghiệp vụ / UI",
+          "marginLeft": 0,
+          "indent": 0,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Tách tầng lưu trữ / nghiệp vụ / UI",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ],
+          "bulletCharacter": ""
+        },
+        {
+          "index": 2,
+          "text": "Unit test: sắp xếp, tìm kiếm, validation",
+          "marginLeft": 0,
+          "indent": 0,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Unit test: sắp xếp, tìm kiếm, validation",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ],
+          "bulletCharacter": ""
+        },
+        {
+          "index": 3,
+          "text": "Biểu đồ thống kê trực quan",
+          "marginLeft": 0,
+          "indent": 0,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Biểu đồ thống kê trực quan",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ],
+          "bulletCharacter": ""
+        }
+      ]
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dsji5sne",
+      "id": "15",
+      "name": "Shape 13",
+      "bbox": [
+        504,
+        374.4,
+        100.8,
+        28.8
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#1E2761",
+      "lineColor": "#1E2761",
+      "lineWidth": 1.33
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/61032lsz",
+      "id": "16",
+      "name": "Text 14",
+      "bbox": [
+        504,
+        374.4,
+        100.8,
+        28.8
+      ],
+      "geometry": "rect",
+      "text": "Dài hạn",
+      "textPreview": "Dài hạn",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Dài hạn"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Dài hạn",
+          "marginLeft": 0,
+          "indent": 0,
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Dài hạn",
+              "fontSize": 12,
+              "typeface": "Calibri",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": ""
+        }
+      ]
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vmtwra5g",
+      "id": "17",
+      "name": "Text 15",
+      "bbox": [
+        504,
+        406.08,
+        403.2,
+        72
+      ],
+      "geometry": "rect",
+      "text": "SQLite / SQL Server\nTài khoản, phân quyền, lịch sử\nKiểm kê, điều chuyển, khấu hao",
+      "textPreview": "SQLite / SQL Server | Tài khoản, phân quyền, lịch sử | Kiểm kê, điều chuyển, khấu hao",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "SQLite / SQL Server"
+          },
+          {
+            "index": 2,
+            "text": "Tài khoản, phân quyền, lịch sử"
+          },
+          {
+            "index": 3,
+            "text": "Kiểm kê, điều chuyển, khấu hao"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "SQLite / SQL Server",
+          "marginLeft": 0,
+          "indent": 0,
+          "runs": [
+            {
+              "index": 1,
+              "text": "SQLite / SQL Server",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ],
+          "bulletCharacter": ""
+        },
+        {
+          "index": 2,
+          "text": "Tài khoản, phân quyền, lịch sử",
+          "marginLeft": 0,
+          "indent": 0,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Tài khoản, phân quyền, lịch sử",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ],
+          "bulletCharacter": ""
+        },
+        {
+          "index": 3,
+          "text": "Kiểm kê, điều chuyển, khấu hao",
+          "marginLeft": 0,
+          "indent": 0,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Kiểm kê, điều chuyển, khấu hao",
+              "fontSize": 14,
+              "typeface": "Calibri",
+              "color": "#1C2B3A"
+            }
+          ],
+          "bulletCharacter": ""
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

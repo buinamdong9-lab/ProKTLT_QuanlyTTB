@@ -1,0 +1,41 @@
+
+digraph G {
+
+graph [bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.65",
+       fontname="Arial", labelloc="t", fontsize="25", fontcolor="#17365D"];
+node [fontname="Arial", fontsize="12", color="#2E74B5", penwidth="1.8"];
+edge [fontname="Arial", fontsize="10", color="#64748B", penwidth="1.5",
+      arrowsize="0.8"];
+
+label="ACTIVITY DIAGRAM - THÊM / CẬP NHẬT HỒ SƠ";
+rankdir=TB;
+node [shape=box, style="rounded,filled", fillcolor="#E8EEF5",
+      width=3.1, height=0.55];
+start [shape=circle, label="", width=0.25, fillcolor="#17365D"];
+input [label="Người dùng nhập thông tin", fillcolor="#EAF4EE"];
+validate [label="Kiểm tra trường bắt buộc,\nđịnh dạng mã, số lượng và ngày"];
+valid [shape=diamond, label="Hợp lệ?", fillcolor="#FFF6DF"];
+duplicate [label="Kiểm tra trùng mã TTB\nvà số hiệu"];
+dup [shape=diamond, label="Bị trùng?", fillcolor="#FFF6DF"];
+copy [label="Tạo thiết bị mới hoặc\nsao chép dữ liệu cũ"];
+update [label="Cập nhật List<ThietBi>", fillcolor="#EAF4EE"];
+save [label="LuuDuLieu(): ghi data.json.tmp\nrồi thay data.json"];
+saved [shape=diamond, label="Lưu thành công?", fillcolor="#FFF6DF"];
+success [label="Thông báo thành công\nvà làm mới giao diện", fillcolor="#EAF4EE"];
+rollback [label="Hoàn tác thêm / sửa\ntrong bộ nhớ", fillcolor="#FDECEC", color="#C62828"];
+error [label="Hiển thị lỗi và đưa con trỏ\nvề trường cần sửa", fillcolor="#FDECEC", color="#C62828"];
+end [shape=doublecircle, label="", width=0.28, fillcolor="#17365D"];
+
+start -> input -> validate -> valid;
+valid -> error [label="Không"];
+error -> input [label="Sửa dữ liệu"];
+valid -> duplicate [label="Có"];
+duplicate -> dup;
+dup -> error [label="Có"];
+dup -> copy [label="Không"];
+copy -> update -> save -> saved;
+saved -> success [label="Có"];
+success -> end;
+saved -> rollback [label="Không"];
+rollback -> end;
+}

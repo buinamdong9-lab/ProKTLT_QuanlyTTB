@@ -1,0 +1,219 @@
+{
+  "sourcePptx": "D:\\code\\BaoCao_KTLT_TTB_HoanThien.pptx",
+  "workspace": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb",
+  "outDir": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2",
+  "generatedAt": "2026-06-12T01:03:04.040Z",
+  "slideCount": 18,
+  "slideArtifacts": [
+    {
+      "slide": 1,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-01.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-01.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-01.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-01.layout.json"
+    },
+    {
+      "slide": 2,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-02.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-02.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-02.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-02.layout.json"
+    },
+    {
+      "slide": 3,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-03.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-03.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-03.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-03.layout.json"
+    },
+    {
+      "slide": 4,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-04.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-04.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-04.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-04.layout.json"
+    },
+    {
+      "slide": 5,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-05.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-05.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-05.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-05.layout.json"
+    },
+    {
+      "slide": 6,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-06.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-06.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-06.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-06.layout.json"
+    },
+    {
+      "slide": 7,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-07.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-07.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-07.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-07.layout.json"
+    },
+    {
+      "slide": 8,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-08.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-08.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-08.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-08.layout.json"
+    },
+    {
+      "slide": 9,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-09.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-09.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-09.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-09.layout.json"
+    },
+    {
+      "slide": 10,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-10.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-10.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-10.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-10.layout.json"
+    },
+    {
+      "slide": 11,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-11.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-11.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-11.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-11.layout.json"
+    },
+    {
+      "slide": 12,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-12.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-12.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-12.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-12.layout.json"
+    },
+    {
+      "slide": 13,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-13.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-13.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-13.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-13.layout.json"
+    },
+    {
+      "slide": 14,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-14.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-14.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-14.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-14.layout.json"
+    },
+    {
+      "slide": 15,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-15.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-15.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-15.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-15.layout.json"
+    },
+    {
+      "slide": 16,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-16.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-16.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-16.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-16.layout.json"
+    },
+    {
+      "slide": 17,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-17.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-17.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-17.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-17.layout.json"
+    },
+    {
+      "slide": 18,
+      "previewPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\source-slides\\source-slide-18.png",
+      "previewRelativePath": "final-inspect-2/source-slides/source-slide-18.png",
+      "layoutPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\layouts\\source-slide-18.layout.json",
+      "layoutRelativePath": "final-inspect-2/layouts/source-slide-18.layout.json"
+    }
+  ],
+  "inspectPath": "D:\\ProKTLT\\QuanlyTTB\\outputs\\manual-20260612-ttb\\presentations\\bao-cao-ktlt-ttb\\final-inspect-2\\template-inspect.ndjson",
+  "inspectRelativePath": "final-inspect-2/template-inspect.ndjson",
+  "inspectTruncated": true,
+  "inspectMetadata": {
+    "revision": "b1gkc2",
+    "target": {
+      "id": "pr/3q7mcl"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  },
+  "extractedMedia": [],
+  "fonts": [
+    "+mj-lt",
+    "+mn-lt",
+    "Angsana New",
+    "Arial",
+    "Calibri",
+    "Calibri Light",
+    "Cambria",
+    "Cordia New",
+    "DaunPenh",
+    "DokChampa",
+    "Ebrima",
+    "Estrangelo Edessa",
+    "Euphemia",
+    "Gautami",
+    "Iskoola Pota",
+    "Javanese Text",
+    "Kalinga",
+    "Kartika",
+    "Latha",
+    "Leelawadee UI",
+    "MV Boli",
+    "Mangal",
+    "Microsoft Himalaya",
+    "Microsoft JhengHei",
+    "Microsoft New Tai Lue",
+    "Microsoft Tai Le",
+    "Microsoft Uighur",
+    "Microsoft Yi Baiti",
+    "Mongolian Baiti",
+    "MoolBoran",
+    "Myanmar Text",
+    "Nirmala UI",
+    "Nyala",
+    "Phagspa",
+    "Plantagenet Cherokee",
+    "Raavi",
+    "Segoe UI",
+    "Shruti",
+    "Sylfaen",
+    "Times New Roman",
+    "Tunga",
+    "Vrinda",
+    "新細明體",
+    "游ゴシック",
+    "游ゴシック Light",
+    "等线",
+    "等线 Light",
+    "맑은 고딕"
+  ],
+  "packageParts": {
+    "mediaCount": 0,
+    "slideXmlCount": 18,
+    "chartCount": 0,
+    "tableSlideCount": 0
+  }
+}

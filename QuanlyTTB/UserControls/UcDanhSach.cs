@@ -1,19 +1,35 @@
-using System.IO.Compression;
+// =============================================================================
+// File: UserControls/UcDanhSach.cs
+// Mô tả: Chức năng M2 - Hiển thị danh sách trang thiết bị.
+//         Phân trang (20/trang), xóa, sửa, sao lưu, khôi phục, xuất CSV.
+// =============================================================================
+
 using System.Text;
 using System.Text.Json;
 using QuanlyTTB.Models;
 
 namespace QuanlyTTB.UserControls;
 
+/// <summary>UcDanhSach - hiển thị và quản lý danh sách thiết bị với phân trang.</summary>
 public partial class UcDanhSach : UserControl
 {
+    // =========================================================================
+    // BIẾN THÀNH VIÊN
+    // =========================================================================
+
+    /// <summary>Thư mục backup. Expression-bodied property: tính giá trị mỗi lần truy cập.</summary>
     private static string BackupFolder =>
         Path.Combine(MainForm.DataFolder, "Backup");
 
     private const int KichThuocTrang = 20;
     private MainForm? mainForm;
-    private List<ThietBi> duLieuPhanTrang = [];
+    /// <summary>Dữ liệu đang hiển thị (toàn bộ hoặc kết quả tìm kiếm M4).</summary>
+    private List<ThietBi> duLieuPhanTrang = new List<ThietBi>();
     private int trangHienTai = 1;
+
+    // =========================================================================
+    // CONSTRUCTORS
+    // =========================================================================
 
     public UcDanhSach()
     {
@@ -27,17 +43,24 @@ public partial class UcDanhSach : UserControl
         TaiLai();
     }
 
+    // =========================================================================
+    // XỬ LÝ SỰ KIỆN
+    // =========================================================================
+
+    /// <summary>Tải lại: xóa kết quả tìm kiếm M4 để hiển thị toàn bộ danh sách.</summary>
     private void btnTaiLai_Click(object sender, EventArgs e)
     {
         if (mainForm == null) return;
-
         mainForm.XoaKetQuaTimKiem();
         TaiLai();
     }
 
+    /// <summary>Xóa thiết bị được chọn, rollback nếu lưu thất bại.</summary>
     private void btnXoa_Click(object sender, EventArgs e)
     {
         if (mainForm == null) return;
+        // Pattern matching "is not ThietBi tb": kiểm tra kiểu + ép kiểu cùng lúc
+        // "?.": null-conditional operator, tránh lỗi NullReferenceException
         if (gridDanhSach.CurrentRow?.DataBoundItem is not ThietBi tb)
         {
             MessageBox.Show("Hãy chọn bản ghi cần xóa."); return;
@@ -45,6 +68,7 @@ public partial class UcDanhSach : UserControl
         if (MessageBox.Show($"Xóa thiết bị {tb.MaTTB}?", "Xác nhận",
             MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
 
+        // Lưu vị trí cũ để rollback
         int viTriCu = mainForm.DanhSach.IndexOf(tb);
         if (viTriCu < 0)
             return;
@@ -56,11 +80,13 @@ public partial class UcDanhSach : UserControl
         }
         else
         {
+            // Rollback: chèn lại vào đúng vị trí cũ
             mainForm.DanhSach.Insert(viTriCu, tb);
             TaiLai();
         }
     }
 
+    /// <summary>Mở M1 chế độ cập nhật với thiết bị được chọn.</summary>
     private void btnSua_Click(object sender, EventArgs e)
     {
         if (mainForm == null) return;
@@ -70,6 +96,10 @@ public partial class UcDanhSach : UserControl
         }
         mainForm.MoThemMoi(tb);
     }
+
+    // =========================================================================
+    // SAO LƯU VÀ KHÔI PHỤC
+    // =========================================================================
 
     private void btnSaoLuu_Click(object sender, EventArgs e)
     {
@@ -86,14 +116,16 @@ public partial class UcDanhSach : UserControl
         }
     }
 
+    /// <summary>Khôi phục: chọn file backup → validate → ghi đè data.json → nạp lại.</summary>
     private void btnKhoiPhuc_Click(object sender, EventArgs e)
     {
         if (mainForm == null) return;
 
+        // "using": tự động giải phóng tài nguyên (Dispose) khi ra khỏi block
         using OpenFileDialog hopThoai = new()
         {
             Title = "Chọn file backup",
-            Filter = "File backup ZIP (*.zip)|*.zip",
+            Filter = "File backup JSON (*.json)|*.json",
             InitialDirectory = BackupFolder
         };
 
@@ -119,6 +151,10 @@ public partial class UcDanhSach : UserControl
         }
     }
 
+    // =========================================================================
+    // XUẤT CSV
+    // =========================================================================
+
     private void btnXuatExcel_Click(object sender, EventArgs e)
     {
         if (mainForm == null || duLieuPhanTrang.Count == 0)
@@ -132,6 +168,7 @@ public partial class UcDanhSach : UserControl
         {
             Title = "Xuất danh sách trang thiết bị",
             Filter = "File CSV mở bằng Excel (*.csv)|*.csv",
+            // DateTime.Now:yyyyMMdd_HHmmss: string interpolation format
             FileName = $"DanhSachTrangThietBi_{DateTime.Now:yyyyMMdd_HHmmss}.csv",
             AddExtension = true,
             DefaultExt = "csv"
@@ -153,9 +190,15 @@ public partial class UcDanhSach : UserControl
         }
     }
 
+    // =========================================================================
+    // XỬ LÝ DỮ LIỆU
+    // =========================================================================
+
+    /// <summary>Tải dữ liệu: dùng kết quả M4 nếu có, ngược lại dùng toàn bộ.</summary>
     private void TaiLai()
     {
         if (mainForm == null) return;
+        // Toán tử "??": dùng kết quả tìm kiếm nếu có, ngược lại dùng danh sách đầy đủ
         duLieuPhanTrang = mainForm.KetQuaTimKiemM4 ?? mainForm.DanhSach;
         trangHienTai = 1;
         HienThiTrang();
@@ -164,130 +207,52 @@ public partial class UcDanhSach : UserControl
             : $"Kết quả M4 ({mainForm.MoTaTimKiemM4}): {duLieuPhanTrang.Count} hồ sơ";
     }
 
+    /// <summary>Sao lưu data.json vào thư mục Backup (atomic write).</summary>
     private static string SaoLuuDuLieu()
     {
         Directory.CreateDirectory(BackupFolder);
         if (!File.Exists(MainForm.DataFilePath))
             throw new FileNotFoundException("Không tìm thấy data.json để sao lưu.");
 
-        string tenFile = $"backup_{DateTime.Now:yyyyMMdd_HHmmss}.zip";
+        string tenFile = $"backup_{DateTime.Now:yyyyMMdd_HHmmss}.json";
         string fileBackup = Path.Combine(BackupFolder, tenFile);
         string fileTam = fileBackup + ".tmp";
 
         try
         {
-            using ZipArchive zip = ZipFile.Open(fileTam, ZipArchiveMode.Create);
-            zip.CreateEntryFromFile(MainForm.DataFilePath, "data.json",
-                CompressionLevel.Optimal);
-            zip.Dispose();
-            File.Move(fileTam, fileBackup, true);
+            File.Copy(MainForm.DataFilePath, fileTam, true);
+            File.Move(fileTam, fileBackup,true);
         }
         finally
         {
             if (File.Exists(fileTam))
                 File.Delete(fileTam);
         }
-
         return fileBackup;
     }
 
+    /// <summary>Khôi phục: đọc backup → validate → ghi đè data.json.</summary>
     private static void KhoiPhucDuLieu(string fileBackup)
     {
         Directory.CreateDirectory(MainForm.DataFolder);
-        string thuMucTam = Path.Combine(MainForm.DataFolder,
-            $"Restore_{Guid.NewGuid():N}");
 
-        try
-        {
-            ZipFile.ExtractToDirectory(fileBackup, thuMucTam);
-            string dataTam = Path.Combine(thuMucTam, "data.json");
-            if (!File.Exists(dataTam))
-                throw new InvalidDataException("File backup không có data.json.");
+        List<ThietBi?> danhSach =
+            JsonSerializer.Deserialize<List<ThietBi?>>(
+                File.ReadAllText(fileBackup))
+            ?? throw new InvalidDataException(
+                "File backup JSON không hợp lệ.");
 
-            List<ThietBi?> danhSach =
-                JsonSerializer.Deserialize<List<ThietBi?>>(
-                    File.ReadAllText(dataTam))
-                ?? throw new InvalidDataException(
-                    "data.json trong backup không hợp lệ.");
-
-            KiemTraDuLieuKhoiPhuc(danhSach);
-
-            File.Copy(dataTam, MainForm.DataFilePath, true);
-        }
-        finally
-        {
-            if (Directory.Exists(thuMucTam))
-                Directory.Delete(thuMucTam, true);
-        }
+        MainForm.KiemTraDuLieuDanhSach(
+            danhSach, choPhepDanhSachRong: false);
+        File.Copy(fileBackup, MainForm.DataFilePath, true);
     }
 
-    private static void KiemTraDuLieuKhoiPhuc(List<ThietBi?> danhSach)
-    {
-        if (danhSach.Count == 0)
-            throw new InvalidDataException(
-                "File backup không chứa bản ghi thiết bị nào.");
+    // =========================================================================
+    // XUẤT FILE CSV
+    // =========================================================================
 
-        HashSet<string> cacMa =
-            new(StringComparer.CurrentCultureIgnoreCase);
-        HashSet<string> cacSoHieu =
-            new(StringComparer.CurrentCultureIgnoreCase);
-
-        for (int i = 0; i < danhSach.Count; i++)
-        {
-            ThietBi tb = danhSach[i]
-                ?? throw LoiDuLieu(i, "Bản ghi có giá trị null.");
-
-            KiemTraBatBuoc(i, "Mã TTB", tb.MaTTB);
-            KiemTraBatBuoc(i, "Số hiệu", tb.SoHieu);
-            KiemTraBatBuoc(i, "Tên thiết bị", tb.TenTTB);
-            KiemTraBatBuoc(i, "Nguồn cấp", tb.NguonCap);
-            KiemTraBatBuoc(i, "Chủng loại", tb.ChungLoai);
-
-            string maTTB = tb.MaTTB.Trim();
-            if (!maTTB.StartsWith("TTB",
-                    StringComparison.OrdinalIgnoreCase) ||
-                !int.TryParse(maTTB[3..], out int soThuTu) ||
-                soThuTu <= 0)
-                throw LoiDuLieu(i,
-                    $"Mã TTB \"{tb.MaTTB}\" không đúng định dạng TTBxxx.");
-
-            if (!cacMa.Add(maTTB))
-                throw LoiDuLieu(i, $"Mã TTB \"{maTTB}\" bị trùng.");
-
-            string soHieu = tb.SoHieu.Trim();
-            if (!cacSoHieu.Add(soHieu))
-                throw LoiDuLieu(i, $"Số hiệu \"{soHieu}\" bị trùng.");
-
-            if (tb.SoLuong <= 0)
-                throw LoiDuLieu(i, "Số lượng phải lớn hơn 0.");
-
-            if (tb.Cap is < 1 or > 5)
-                throw LoiDuLieu(i, "Cấp phải nằm trong khoảng từ 1 đến 5.");
-
-            if (tb.NgaySanXuat == default)
-                throw LoiDuLieu(i, "Ngày sản xuất không hợp lệ.");
-
-            if (tb.NgayDuaVaoSuDung == default)
-                throw LoiDuLieu(i, "Ngày đưa vào sử dụng không hợp lệ.");
-
-            if (tb.NgayDuaVaoSuDung.Date < tb.NgaySanXuat.Date)
-                throw LoiDuLieu(i,
-                    "Ngày đưa vào sử dụng không được trước ngày sản xuất.");
-        }
-    }
-
-    private static void KiemTraBatBuoc(
-        int chiSo, string tenTruong, string? giaTri)
-    {
-        if (string.IsNullOrWhiteSpace(giaTri))
-            throw LoiDuLieu(chiSo, $"{tenTruong} không được để trống.");
-    }
-
-    private static InvalidDataException LoiDuLieu(
-        int chiSo, string noiDung) =>
-        new($"Dữ liệu backup không hợp lệ tại bản ghi {chiSo + 1}: " +
-            noiDung);
-
+    /// <summary>Ghi danh sách ra CSV. UTF-8 có BOM để Excel nhận diện tiếng Việt.</summary>
+    /// <remarks>"new UTF8Encoding(true)": tham số true = thêm BOM (Byte Order Mark).</remarks>
     private static void XuatDanhSachCsv(
         string filePath, List<ThietBi> danhSach)
     {
@@ -311,37 +276,64 @@ public partial class UcDanhSach : UserControl
                 tb.Cap.ToString()
             ];
 
+            // LINQ Select(): Áp dụng hàm ChuanHoaO cho từng chuỗi trong mảng giaTri để chuẩn hóa (bọc dấu ngoặc kép, xử lý dấu nháy kép) trước khi nối lại bằng dấu phẩy
             writer.WriteLine(string.Join(',', giaTri.Select(ChuanHoaO)));
         }
     }
 
+    /// <summary>Chuẩn hóa giá trị cho CSV: bọc ngoặc kép, escape " thành "" (RFC 4180).</summary>
     private static string ChuanHoaO(string giaTri)
     {
         string sach = giaTri.Replace("\r", " ").Replace("\n", " ");
         return $"\"{sach.Replace("\"", "\"\"")}\"";
     }
 
+    // =========================================================================
+    // PHÂN TRANG
+    // =========================================================================
+
+    /// <summary>Hiển thị trang hiện tại: tính toán dữ liệu, cập nhật label và nút.</summary>
     private void HienThiTrang()
     {
+        // 1. Lấy tổng số bản ghi trong danh sách cần phân trang
         int tongBanGhi = duLieuPhanTrang.Count;
-        int tongTrang = Math.Max(1, (int)Math.Ceiling(tongBanGhi / (double)KichThuocTrang));
-        trangHienTai = Math.Clamp(trangHienTai, 1, tongTrang);
 
+        // 2. Tính tổng số trang: Chia tổng bản ghi cho kích thước mỗi trang (20).
+        // Phải ép kiểu sang (double) để thực hiện phép chia số thực, rồi dùng Math.Ceiling để làm tròn lên.
+        // Math.Max(1, ...) đảm bảo tổng số trang luôn tối thiểu là 1 trang (ngay cả khi không có bản ghi nào).
+        int tongTrang = Math.Max(1, (int)Math.Ceiling(tongBanGhi / (double)KichThuocTrang));
+
+        // 3. Bảo vệ biến trangHienTai: Math.Clamp giới hạn trangHienTai luôn nằm trong đoạn [1, tongTrang],
+        // ngăn chặn việc trang hiện tại bị nhỏ hơn 1 hoặc vượt quá tổng số trang hiện có.
+        trangHienTai = Math.Clamp(trangHienTai,1, tongTrang);
+
+        // 4. Lọc dữ liệu của trang hiện tại bằng LINQ:
+        // - Skip(): Bỏ qua (trangHienTai - 1) * 20 bản ghi của các trang trước đó
+        // - Take(): Lấy ra tối đa 20 bản ghi tiếp theo để hiển thị trên trang hiện tại
+        // - ToList(): Thực thi truy vấn LINQ và chuyển kết quả thành danh sách List<ThietBi> thực tế
         List<ThietBi> duLieuTrang = duLieuPhanTrang
             .Skip((trangHienTai - 1) * KichThuocTrang)
             .Take(KichThuocTrang)
             .ToList();
 
+        // 5. Cập nhật dữ liệu cho DataGridView:
+        // Đặt DataSource về null trước để xóa dữ liệu cũ và buộc Grid vẽ lại (refresh), tránh lỗi cache hiển thị
         thietBiBindingSource.DataSource = null;
         thietBiBindingSource.DataSource = duLieuTrang;
 
+        // 6. Tính toán số thứ tự dòng để hiển thị thông tin label (Ví dụ: "Hiển thị 21-40 / 53"):
+        // - batDau: dòng đầu tiên của trang (ví dụ trang 2: (2-1)*20 + 1 = dòng thứ 21). Nếu không có bản ghi nào thì là 0.
+        // - ketThuc: dòng cuối cùng của trang (ví dụ trang 2: 2*20 = 40. Nếu trang cuối chỉ có 13 dòng thì Math.Min(60, 53) = dòng thứ 53).
         int batDau = tongBanGhi == 0 ? 0 : (trangHienTai - 1) * KichThuocTrang + 1;
         int ketThuc = Math.Min(trangHienTai * KichThuocTrang, tongBanGhi);
         lblViTri.Text = $"Hiển thị {batDau}-{ketThuc} / {tongBanGhi}";
         lblTrang.Text = $"Trang {trangHienTai} / {tongTrang}";
 
+        // 7. Cập nhật trạng thái kích hoạt (Bật/Tắt) của các nút điều hướng:
+        // - Nút Trang Đầu & Trang Trước: Chỉ bật khi trang hiện tại lớn hơn 1 (không ở trang đầu)
         btnTrangDau.Enabled = trangHienTai > 1;
         btnTrangTruoc.Enabled = trangHienTai > 1;
+        // - Nút Trang Sau & Trang Cuối: Chỉ bật khi trang hiện tại nhỏ hơn tổng số trang (không ở trang cuối)
         btnTrangSau.Enabled = trangHienTai < tongTrang;
         btnTrangCuoi.Enabled = trangHienTai < tongTrang;
     }

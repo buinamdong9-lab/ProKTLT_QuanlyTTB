@@ -43,9 +43,9 @@ partial class UcTimKiem
     {
         components = new System.ComponentModel.Container();
         DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+        DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
         DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
         DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-        DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
         lblTitle = new Label();
         panelOptions = new Panel();
         lblThuatToan = new Label();
@@ -63,17 +63,17 @@ partial class UcTimKiem
         btnTrangTruoc = new Button();
         btnTrangSau = new Button();
         btnTrangCuoi = new Button();
-        gridKetQua = new System.Windows.Forms.DataGridView();
-        thietBiBindingSource = new System.Windows.Forms.BindingSource(components);
-        colMaTTB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colSoHieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colTenTTB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colNgaySanXuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colNgaySuDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colNguonCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colChungLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+        gridKetQua = new DataGridView();
+        colMaTTB = new DataGridViewTextBoxColumn();
+        colSoHieu = new DataGridViewTextBoxColumn();
+        colTenTTB = new DataGridViewTextBoxColumn();
+        colNgaySanXuat = new DataGridViewTextBoxColumn();
+        colNgaySuDung = new DataGridViewTextBoxColumn();
+        colNguonCap = new DataGridViewTextBoxColumn();
+        colSoLuong = new DataGridViewTextBoxColumn();
+        colChungLoai = new DataGridViewTextBoxColumn();
+        colCap = new DataGridViewTextBoxColumn();
+        thietBiBindingSource = new BindingSource(components);
         panelOptions.SuspendLayout();
         panelPhanTrang.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)gridKetQua).BeginInit();
@@ -86,9 +86,10 @@ partial class UcTimKiem
         lblTitle.Dock = DockStyle.Top;
         lblTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
         lblTitle.ForeColor = Color.FromArgb(27, 94, 60);
+        lblTitle.Location = new Point(0, 0);
         lblTitle.Name = "lblTitle";
-        lblTitle.Padding = new Padding(25, 18, 0, 0);
-        lblTitle.Size = new Size(950, 66);
+        lblTitle.Padding = new Padding(29, 24, 0, 0);
+        lblTitle.Size = new Size(1086, 88);
         lblTitle.TabIndex = 0;
         lblTitle.Text = "M4 - TÌM KIẾM TRANG THIẾT BỊ";
         // 
@@ -104,16 +105,17 @@ partial class UcTimKiem
         panelOptions.Controls.Add(btnTim);
         panelOptions.Controls.Add(lblStatus);
         panelOptions.Dock = DockStyle.Top;
-        panelOptions.Location = new Point(0, 66);
+        panelOptions.Location = new Point(0, 88);
+        panelOptions.Margin = new Padding(3, 4, 3, 4);
         panelOptions.Name = "panelOptions";
-        panelOptions.Size = new Size(950, 142);
+        panelOptions.Size = new Size(1086, 189);
         panelOptions.TabIndex = 1;
         // 
         // lblThuatToan
         // 
-        lblThuatToan.Location = new Point(25, 18);
+        lblThuatToan.Location = new Point(29, 24);
         lblThuatToan.Name = "lblThuatToan";
-        lblThuatToan.Size = new Size(90, 25);
+        lblThuatToan.Size = new Size(103, 33);
         lblThuatToan.TabIndex = 0;
         lblThuatToan.Text = "Thuật toán:";
         // 
@@ -122,17 +124,18 @@ partial class UcTimKiem
         cboThuatToan.DropDownStyle = ComboBoxStyle.DropDownList;
         cboThuatToan.FormattingEnabled = true;
         cboThuatToan.Items.AddRange(new object[] { "Tìm kiếm tuần tự", "Tìm kiếm nhị phân" });
-        cboThuatToan.Location = new Point(115, 15);
+        cboThuatToan.Location = new Point(131, 20);
+        cboThuatToan.Margin = new Padding(3, 4, 3, 4);
         cboThuatToan.Name = "cboThuatToan";
-        cboThuatToan.Size = new Size(190, 23);
+        cboThuatToan.Size = new Size(217, 28);
         cboThuatToan.TabIndex = 1;
         cboThuatToan.SelectedIndexChanged += cboThuatToan_SelectedIndexChanged;
         // 
         // lblKhoa
         // 
-        lblKhoa.Location = new Point(335, 18);
+        lblKhoa.Location = new Point(383, 24);
         lblKhoa.Name = "lblKhoa";
-        lblKhoa.Size = new Size(45, 25);
+        lblKhoa.Size = new Size(51, 33);
         lblKhoa.TabIndex = 2;
         lblKhoa.Text = "Khóa:";
         // 
@@ -141,24 +144,26 @@ partial class UcTimKiem
         cboKhoa.DropDownStyle = ComboBoxStyle.DropDownList;
         cboKhoa.FormattingEnabled = true;
         cboKhoa.Items.AddRange(new object[] { "Mã TTB", "Tên TTB", "Ngày sản xuất", "Ngày đưa vào sử dụng", "Nguồn cấp", "Chủng loại", "Số lượng", "Cấp" });
-        cboKhoa.Location = new Point(385, 15);
+        cboKhoa.Location = new Point(440, 20);
+        cboKhoa.Margin = new Padding(3, 4, 3, 4);
         cboKhoa.Name = "cboKhoa";
-        cboKhoa.Size = new Size(170, 23);
+        cboKhoa.Size = new Size(194, 28);
         cboKhoa.TabIndex = 3;
         // 
         // lblTuKhoa
         // 
-        lblTuKhoa.Location = new Point(25, 66);
+        lblTuKhoa.Location = new Point(29, 88);
         lblTuKhoa.Name = "lblTuKhoa";
-        lblTuKhoa.Size = new Size(90, 25);
+        lblTuKhoa.Size = new Size(103, 33);
         lblTuKhoa.TabIndex = 4;
         lblTuKhoa.Text = "Từ khóa:";
         // 
         // txtTuKhoa
         // 
-        txtTuKhoa.Location = new Point(115, 63);
+        txtTuKhoa.Location = new Point(131, 84);
+        txtTuKhoa.Margin = new Padding(3, 4, 3, 4);
         txtTuKhoa.Name = "txtTuKhoa";
-        txtTuKhoa.Size = new Size(440, 23);
+        txtTuKhoa.Size = new Size(502, 27);
         txtTuKhoa.TabIndex = 5;
         // 
         // btnTim
@@ -166,9 +171,10 @@ partial class UcTimKiem
         btnTim.BackColor = Color.FromArgb(27, 94, 60);
         btnTim.FlatStyle = FlatStyle.Flat;
         btnTim.ForeColor = Color.White;
-        btnTim.Location = new Point(585, 58);
+        btnTim.Location = new Point(669, 77);
+        btnTim.Margin = new Padding(3, 4, 3, 4);
         btnTim.Name = "btnTim";
-        btnTim.Size = new Size(120, 36);
+        btnTim.Size = new Size(137, 48);
         btnTim.TabIndex = 6;
         btnTim.Text = "Tìm kiếm";
         btnTim.UseVisualStyleBackColor = false;
@@ -178,9 +184,9 @@ partial class UcTimKiem
         // 
         lblStatus.AutoSize = true;
         lblStatus.ForeColor = Color.DimGray;
-        lblStatus.Location = new Point(25, 112);
+        lblStatus.Location = new Point(29, 149);
         lblStatus.Name = "lblStatus";
-        lblStatus.Size = new Size(170, 15);
+        lblStatus.Size = new Size(185, 20);
         lblStatus.TabIndex = 7;
         lblStatus.Text = "Nhập từ khóa để tìm kiếm.";
         // 
@@ -194,26 +200,27 @@ partial class UcTimKiem
         panelPhanTrang.Controls.Add(btnTrangSau);
         panelPhanTrang.Controls.Add(btnTrangCuoi);
         panelPhanTrang.Dock = DockStyle.Bottom;
-        panelPhanTrang.Location = new Point(0, 624);
+        panelPhanTrang.Location = new Point(0, 832);
+        panelPhanTrang.Margin = new Padding(3, 4, 3, 4);
         panelPhanTrang.Name = "panelPhanTrang";
-        panelPhanTrang.Size = new Size(950, 56);
+        panelPhanTrang.Size = new Size(1086, 75);
         panelPhanTrang.TabIndex = 3;
         // 
         // lblViTri
         // 
         lblViTri.AutoSize = true;
-        lblViTri.Location = new Point(25, 20);
+        lblViTri.Location = new Point(29, 27);
         lblViTri.Name = "lblViTri";
-        lblViTri.Size = new Size(110, 15);
+        lblViTri.Size = new Size(109, 20);
         lblViTri.TabIndex = 0;
         lblViTri.Text = "Hiển thị 0-0 / 0";
         // 
         // lblTrang
         // 
         lblTrang.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-        lblTrang.Location = new Point(664, 16);
+        lblTrang.Location = new Point(732, 21);
         lblTrang.Name = "lblTrang";
-        lblTrang.Size = new Size(76, 25);
+        lblTrang.Size = new Size(97, 33);
         lblTrang.TabIndex = 3;
         lblTrang.Text = "Trang 1 / 1";
         lblTrang.TextAlign = ContentAlignment.MiddleCenter;
@@ -224,9 +231,10 @@ partial class UcTimKiem
         btnTrangDau.BackColor = Color.FromArgb(27, 94, 60);
         btnTrangDau.FlatStyle = FlatStyle.Flat;
         btnTrangDau.ForeColor = Color.White;
-        btnTrangDau.Location = new Point(474, 10);
+        btnTrangDau.Location = new Point(516, 13);
+        btnTrangDau.Margin = new Padding(3, 4, 3, 4);
         btnTrangDau.Name = "btnTrangDau";
-        btnTrangDau.Size = new Size(88, 36);
+        btnTrangDau.Size = new Size(101, 48);
         btnTrangDau.TabIndex = 1;
         btnTrangDau.Text = "Trang đầu";
         btnTrangDau.UseVisualStyleBackColor = false;
@@ -238,9 +246,10 @@ partial class UcTimKiem
         btnTrangTruoc.BackColor = Color.FromArgb(27, 94, 60);
         btnTrangTruoc.FlatStyle = FlatStyle.Flat;
         btnTrangTruoc.ForeColor = Color.White;
-        btnTrangTruoc.Location = new Point(568, 10);
+        btnTrangTruoc.Location = new Point(623, 13);
+        btnTrangTruoc.Margin = new Padding(3, 4, 3, 4);
         btnTrangTruoc.Name = "btnTrangTruoc";
-        btnTrangTruoc.Size = new Size(90, 36);
+        btnTrangTruoc.Size = new Size(103, 48);
         btnTrangTruoc.TabIndex = 2;
         btnTrangTruoc.Text = "Trang trước";
         btnTrangTruoc.UseVisualStyleBackColor = false;
@@ -252,9 +261,10 @@ partial class UcTimKiem
         btnTrangSau.BackColor = Color.FromArgb(27, 94, 60);
         btnTrangSau.FlatStyle = FlatStyle.Flat;
         btnTrangSau.ForeColor = Color.White;
-        btnTrangSau.Location = new Point(746, 10);
+        btnTrangSau.Location = new Point(853, 13);
+        btnTrangSau.Margin = new Padding(3, 4, 3, 4);
         btnTrangSau.Name = "btnTrangSau";
-        btnTrangSau.Size = new Size(85, 36);
+        btnTrangSau.Size = new Size(97, 48);
         btnTrangSau.TabIndex = 4;
         btnTrangSau.Text = "Trang sau";
         btnTrangSau.UseVisualStyleBackColor = false;
@@ -266,9 +276,10 @@ partial class UcTimKiem
         btnTrangCuoi.BackColor = Color.FromArgb(27, 94, 60);
         btnTrangCuoi.FlatStyle = FlatStyle.Flat;
         btnTrangCuoi.ForeColor = Color.White;
-        btnTrangCuoi.Location = new Point(837, 10);
+        btnTrangCuoi.Location = new Point(957, 13);
+        btnTrangCuoi.Margin = new Padding(3, 4, 3, 4);
         btnTrangCuoi.Name = "btnTrangCuoi";
-        btnTrangCuoi.Size = new Size(88, 36);
+        btnTrangCuoi.Size = new Size(101, 48);
         btnTrangCuoi.TabIndex = 5;
         btnTrangCuoi.Text = "Trang cuối";
         btnTrangCuoi.UseVisualStyleBackColor = false;
@@ -281,79 +292,113 @@ partial class UcTimKiem
         gridKetQua.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         gridKetQua.BackgroundColor = Color.White;
         gridKetQua.BorderStyle = BorderStyle.None;
+        dataGridViewCellStyle1.BackColor = Color.FromArgb(196, 232, 211);
+        dataGridViewCellStyle1.ForeColor = Color.FromArgb(27, 94, 60);
+        dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(196, 232, 211);
+        dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(27, 94, 60);
+        gridKetQua.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
         gridKetQua.ColumnHeadersHeight = 38;
-        dataGridViewCellStyle3.BackColor = Color.FromArgb(196, 232, 211);
-        dataGridViewCellStyle3.ForeColor = Color.FromArgb(27, 94, 60);
-        dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(196, 232, 211);
-        dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(27, 94, 60);
-        gridKetQua.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
         gridKetQua.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-        gridKetQua.ColumnHeadersVisible = true;
-        gridKetQua.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colMaTTB, colSoHieu, colTenTTB, colNgaySanXuat, colNgaySuDung, colNguonCap, colSoLuong, colChungLoai, colCap });
+        gridKetQua.Columns.AddRange(new DataGridViewColumn[] { colMaTTB, colSoHieu, colTenTTB, colNgaySanXuat, colNgaySuDung, colNguonCap, colSoLuong, colChungLoai, colCap });
         gridKetQua.DataSource = thietBiBindingSource;
         gridKetQua.Dock = DockStyle.Fill;
         gridKetQua.EnableHeadersVisualStyles = false;
-        gridKetQua.Location = new Point(0, 208);
+        gridKetQua.Location = new Point(0, 277);
+        gridKetQua.Margin = new Padding(3, 4, 3, 4);
         gridKetQua.Name = "gridKetQua";
         gridKetQua.ReadOnly = true;
         gridKetQua.RowHeadersVisible = false;
-        gridKetQua.RowTemplate.Height = 32;
-        gridKetQua.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        gridKetQua.RowHeadersWidth = 51;
         dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(196, 232, 211);
         dataGridViewCellStyle4.SelectionForeColor = Color.FromArgb(18, 67, 42);
         gridKetQua.RowsDefaultCellStyle = dataGridViewCellStyle4;
-        gridKetQua.Size = new Size(950, 416);
+        gridKetQua.RowTemplate.Height = 32;
+        gridKetQua.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        gridKetQua.Size = new Size(1086, 555);
         gridKetQua.TabIndex = 2;
         // 
-        // columns
+        // colMaTTB
         // 
         colMaTTB.DataPropertyName = "MaTTB";
         colMaTTB.FillWeight = 70F;
         colMaTTB.HeaderText = "Mã TTB";
+        colMaTTB.MinimumWidth = 6;
         colMaTTB.Name = "colMaTTB";
         colMaTTB.ReadOnly = true;
+        // 
+        // colSoHieu
+        // 
         colSoHieu.DataPropertyName = "SoHieu";
         colSoHieu.FillWeight = 70F;
         colSoHieu.HeaderText = "Số hiệu";
+        colSoHieu.MinimumWidth = 6;
         colSoHieu.Name = "colSoHieu";
         colSoHieu.ReadOnly = true;
+        // 
+        // colTenTTB
+        // 
         colTenTTB.DataPropertyName = "TenTTB";
         colTenTTB.FillWeight = 130F;
         colTenTTB.HeaderText = "Tên thiết bị";
+        colTenTTB.MinimumWidth = 6;
         colTenTTB.Name = "colTenTTB";
         colTenTTB.ReadOnly = true;
+        // 
+        // colNgaySanXuat
+        // 
         colNgaySanXuat.DataPropertyName = "NgaySanXuat";
-        dataGridViewCellStyle1.Format = "dd/MM/yyyy";
-        colNgaySanXuat.DefaultCellStyle = dataGridViewCellStyle1;
+        dataGridViewCellStyle2.Format = "dd/MM/yyyy";
+        colNgaySanXuat.DefaultCellStyle = dataGridViewCellStyle2;
         colNgaySanXuat.FillWeight = 90F;
         colNgaySanXuat.HeaderText = "Ngày sản xuất";
+        colNgaySanXuat.MinimumWidth = 6;
         colNgaySanXuat.Name = "colNgaySanXuat";
         colNgaySanXuat.ReadOnly = true;
+        // 
+        // colNgaySuDung
+        // 
         colNgaySuDung.DataPropertyName = "NgayDuaVaoSuDung";
-        dataGridViewCellStyle2.Format = "dd/MM/yyyy";
-        colNgaySuDung.DefaultCellStyle = dataGridViewCellStyle2;
+        dataGridViewCellStyle3.Format = "dd/MM/yyyy";
+        colNgaySuDung.DefaultCellStyle = dataGridViewCellStyle3;
         colNgaySuDung.FillWeight = 90F;
         colNgaySuDung.HeaderText = "Ngày sử dụng";
+        colNgaySuDung.MinimumWidth = 6;
         colNgaySuDung.Name = "colNgaySuDung";
         colNgaySuDung.ReadOnly = true;
+        // 
+        // colNguonCap
+        // 
         colNguonCap.DataPropertyName = "NguonCap";
         colNguonCap.FillWeight = 115F;
         colNguonCap.HeaderText = "Nguồn cấp";
+        colNguonCap.MinimumWidth = 6;
         colNguonCap.Name = "colNguonCap";
         colNguonCap.ReadOnly = true;
+        // 
+        // colSoLuong
+        // 
         colSoLuong.DataPropertyName = "SoLuong";
         colSoLuong.FillWeight = 45F;
         colSoLuong.HeaderText = "SL";
+        colSoLuong.MinimumWidth = 6;
         colSoLuong.Name = "colSoLuong";
         colSoLuong.ReadOnly = true;
+        // 
+        // colChungLoai
+        // 
         colChungLoai.DataPropertyName = "ChungLoai";
         colChungLoai.FillWeight = 105F;
         colChungLoai.HeaderText = "Chủng loại";
+        colChungLoai.MinimumWidth = 6;
         colChungLoai.Name = "colChungLoai";
         colChungLoai.ReadOnly = true;
+        // 
+        // colCap
+        // 
         colCap.DataPropertyName = "Cap";
         colCap.FillWeight = 40F;
         colCap.HeaderText = "Cấp";
+        colCap.MinimumWidth = 6;
         colCap.Name = "colCap";
         colCap.ReadOnly = true;
         // 
@@ -363,15 +408,16 @@ partial class UcTimKiem
         // 
         // UcTimKiem
         // 
-        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleDimensions = new SizeF(8F, 20F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.White;
         Controls.Add(gridKetQua);
         Controls.Add(panelPhanTrang);
         Controls.Add(panelOptions);
         Controls.Add(lblTitle);
+        Margin = new Padding(3, 4, 3, 4);
         Name = "UcTimKiem";
-        Size = new Size(950, 680);
+        Size = new Size(1086, 907);
         panelOptions.ResumeLayout(false);
         panelOptions.PerformLayout();
         panelPhanTrang.ResumeLayout(false);
